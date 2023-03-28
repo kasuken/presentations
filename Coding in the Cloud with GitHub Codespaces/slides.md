@@ -169,20 +169,6 @@ open files
 - https://code.visualstudio.com/docs/remote/devcontainerjson-reference
 - https://github.com/microsoft/vscode-dev-containers
 
----
-<!-- transition: slide-up
-layout: image-left
-image: https://media.licdn.com/dms/image/C4E22AQF3xVz48u-aZw/feedshare-shrink_2048_1536/0/1674116926286?e=1681948800&v=beta&t=IvluYJWS8Fj7FagnBzb6ozNjD_oeYtx3PrncCy6YW00
----
-
-# About me
-
-## Emanuele Bartolesi
-Microsoft 365 Architect<br />
-Microsoft MVP & GitHub Star ⭐
-
-@kasuken<br />
-emanueleb@outlook.com -->
 
 ---
 transition: slide-up
