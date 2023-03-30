@@ -1,0 +1,15 @@
+{
+  "name": "automate-your-tenant-with-powershell-and-azure-functions",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.40.5",
+    "@slidev/theme-default": "*",
+    "@slidev/theme-seriph": "*",
+    "slidev-theme-dotnet-junkie": "0.0.20"
+  }
+}
