@@ -1,3 +1,6 @@
 Abstract
 
 This talk will introduce you to the capabilities of Azure PowerShell Function Apps for Azure administration, interactions with Microsoft 365 and much more. We'll explore the possibilities of these apps through real-world examples, and then guide you through the process of creating and deploying your own Azure Function Apps using PowerShell. With hands-on demonstrations, you'll be equipped to utilize Azure Function Apps to their full potential.
+
+
+https://www.rozemuller.com/monitor-intune-using-azure-functions-powershell-and-graph-api/
