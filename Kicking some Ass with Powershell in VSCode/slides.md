@@ -44,7 +44,7 @@ layout: speaker-info
 
 headerMessage: Thanks for all the fish.
 speakerName: Emanuele Bartolesi
-imageSrc: imageSrc: https://bit.ly/3V4bBPA
+imageSrc: https://bit.ly/3V4bBPA
 jobTitle: Microsoft 365 Architect
 info1: Microsoft MVP & GitHub Star ⭐
 info2: 
