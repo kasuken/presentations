@@ -21,6 +21,10 @@ jobs:
         run:  npm i -g @slidev/cli
       - name: Build
         run: slidev build --out './dist/${{ env.OUT_FOLDER }}'
+      - uses: datamonsters/replace-action@v1
+        with:
+          files: './dist/${{ env.OUT_FOLDER }}/index.html'
+          replacements: '/assets=./assets'       
       - name: Deploy pages
         uses: crazy-max/ghaction-github-pages@v3
         with:
