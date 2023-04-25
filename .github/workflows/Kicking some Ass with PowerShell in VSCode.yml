@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     paths: 
-    - 'Kicking some Ass with PowerShell in VSCode/**'
+    - 'Kicking some Ass with Powershell in VSCode/**'
 env:
   ROOT_FOLDER: 'presentations'
   TALK_FOLDER: 'Kicking some Ass with Powershell in VSCode'
