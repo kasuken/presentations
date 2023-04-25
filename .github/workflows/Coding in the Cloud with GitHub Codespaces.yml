@@ -21,7 +21,8 @@ jobs:
         run:  npm i -g @slidev/cli
       - name: Build
         run: slidev build --out './dist/${{ env.OUT_FOLDER }}'
-      - uses: datamonsters/replace-action@v1
+      - name: Change Urls
+        uses: datamonsters/replace-action@v1
         with:
           files: './dist/${{ env.OUT_FOLDER }}/index.html'
           replacements: '/assets=./assets'       
