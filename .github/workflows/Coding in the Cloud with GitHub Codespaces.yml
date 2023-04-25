@@ -1,8 +1,10 @@
 name: Publish - Coding in the Cloud with GitHub Codespaces
 on: 
-  workflow_dispatch
+  workflow_dispatch:
+  push:
+    paths: 
+    - 'Coding in the Cloud with GitHub Codespaces/**'
 env:
-  ROOT_FOLDER: 'presentations'
   TALK_FOLDER: 'Coding in the Cloud with GitHub Codespaces'
   OUT_FOLDER: 'Coding-in-the-Cloud-with-GitHub-Codespaces'
 jobs:
