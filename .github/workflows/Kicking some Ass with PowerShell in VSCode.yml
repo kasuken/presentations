@@ -5,8 +5,8 @@ on:
     paths: 
     - 'Kicking some Ass with PowerShell in VSCode/**'
 env:
-  TALK_FOLDER: 'Kicking some Ass with PowerShell in VSCode'
-  OUT_FOLDER: 'Kicking-some-Ass-with-PowerShell-in-VSCode'
+  TALK_FOLDER: 'Kicking some Ass with Powershell in VSCode'
+  OUT_FOLDER: 'Kicking-some-Ass-with-Powershell-in-VSCode'
 jobs:
   deploy:
     runs-on: ubuntu-latest
