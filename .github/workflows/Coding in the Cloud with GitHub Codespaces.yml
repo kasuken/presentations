@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./Coding in the Cloud with GitHub Codespaces
+        working-directory: './Coding in the Cloud with GitHub Codespaces'
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -19,7 +19,7 @@ jobs:
       - name: Install slidev
         run:  npm i -g @slidev/cli
       - name: Build
-        run: slidev build ./dist/Coding in the Cloud with GitHub Codespaces
+        run: slidev build './dist/Coding in the Cloud with GitHub Codespaces'
       - name: Deploy pages
         uses: crazy-max/ghaction-github-pages@v3
         with:
