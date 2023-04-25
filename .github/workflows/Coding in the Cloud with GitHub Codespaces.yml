@@ -3,6 +3,7 @@ on:
   workflow_dispatch
 env:
   TALK_FOLDER: 'Coding in the Cloud with GitHub Codespaces'
+  OUT_FOLDER: 'Coding-in-the-Cloud-with-GitHub-Codespaces'
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -19,7 +20,7 @@ jobs:
       - name: Install slidev
         run:  npm i -g @slidev/cli
       - name: Build
-        run: slidev build --out './dist/Coding-in-the-Cloud-with-GitHub-Codespaces'
+        run: slidev build --out './dist/${{ env.OUT_FOLDER }}'
       - name: Deploy pages
         uses: crazy-max/ghaction-github-pages@v3
         with:
