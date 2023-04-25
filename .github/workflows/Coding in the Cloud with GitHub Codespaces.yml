@@ -18,7 +18,7 @@ jobs:
       - name: Build
         run: slidev build
       - name: Deploy pages
-        uses: crazy-max/ghaction-github-pages@v2
+        uses: crazy-max/ghaction-github-pages@v3
         with:
           build_dir: ./Coding in the Cloud with GitHub Codespaces/dist
         env:
