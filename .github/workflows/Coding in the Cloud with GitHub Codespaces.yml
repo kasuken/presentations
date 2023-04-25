@@ -5,6 +5,7 @@ on:
     paths: 
     - 'Coding in the Cloud with GitHub Codespaces/**'
 env:
+  ROOT_FOLDER: 'presentations'
   TALK_FOLDER: 'Coding in the Cloud with GitHub Codespaces'
   OUT_FOLDER: 'Coding-in-the-Cloud-with-GitHub-Codespaces'
 jobs:
@@ -23,7 +24,7 @@ jobs:
       - name: Install slidev
         run:  npm i -g @slidev/cli
       - name: Build
-        run: slidev build --base '/${{ env.OUT_FOLDER }}/' --out './dist/${{ env.OUT_FOLDER }}'    
+        run: slidev build --base '${{ env.ROOT_FOLDER }}/${{ env.OUT_FOLDER }}/' --out './dist/${{ env.OUT_FOLDER }}'    
       - name: Deploy pages
         uses: crazy-max/ghaction-github-pages@v3
         with:
