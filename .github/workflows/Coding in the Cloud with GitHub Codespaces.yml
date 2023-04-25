@@ -1,11 +1,14 @@
 name: Publish - Coding in the Cloud with GitHub Codespaces
-on: [workflow_dispatch]
+on: 
+  workflow_dispatch
+env:
+  TALK_FOLDER: 'Coding in the Cloud with GitHub Codespaces'
 jobs:
   deploy:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./Coding in the Cloud with GitHub Codespaces
+        working-directory: ./$TALK_FOLDER
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
