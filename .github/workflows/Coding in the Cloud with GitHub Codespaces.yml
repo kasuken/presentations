@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: './{{ env.TALK_FOLDER }}'
+        working-directory: './${{ env.TALK_FOLDER }}'
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -23,6 +23,6 @@ jobs:
       - name: Deploy pages
         uses: crazy-max/ghaction-github-pages@v3
         with:
-          build_dir: './Coding in the Cloud with GitHub Codespaces/dist'
+          build_dir: './${{ env.TALK_FOLDER }}/dist'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
