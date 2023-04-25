@@ -24,7 +24,7 @@ jobs:
       - name: Change Urls
         uses: datamonsters/replace-action@v2
         with:
-          files: '/home/runner/work/presentations/presentations/${{ env.OUT_FOLDER }}/dist/${{ env.OUT_FOLDER }}/index.html'
+          files: '/home/runner/work/presentations/presentations/${{ env.TALK_FOLDER }}/dist/${{ env.OUT_FOLDER }}/index.html'
           replacements: '/assets=./assets'       
       - name: Deploy pages
         uses: crazy-max/ghaction-github-pages@v3
