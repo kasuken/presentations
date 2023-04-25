@@ -22,7 +22,7 @@ jobs:
       - name: Build
         run: slidev build --out './dist/${{ env.OUT_FOLDER }}'
       - name: Change Urls
-        uses: datamonsters/replace-action@v1
+        uses: datamonsters/replace-action@v2
         with:
           files: '/dist/${{ env.OUT_FOLDER }}/index.html'
           replacements: '/assets=./assets'       
