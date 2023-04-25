@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./$TALK_FOLDER
+        working-directory: ./${{ env.$TALK_FOLDER }}
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
