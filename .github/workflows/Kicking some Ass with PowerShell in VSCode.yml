@@ -1,13 +1,13 @@
-name: Publish - Coding in the Cloud with GitHub Codespaces
+name: Publish - Kicking some Ass with PowerShell in VSCode
 on: 
   workflow_dispatch:
   push:
     paths: 
-    - 'Coding in the Cloud with GitHub Codespaces/**'
+    - 'Kicking some Ass with PowerShell in VSCode/**'
 env:
   ROOT_FOLDER: 'presentations'
-  TALK_FOLDER: 'Coding in the Cloud with GitHub Codespaces'
-  OUT_FOLDER: 'Coding-in-the-Cloud-with-GitHub-Codespaces'
+  TALK_FOLDER: 'Kicking some Ass with Powershell in VSCode'
+  OUT_FOLDER: 'Kicking-some-Ass-with-Powershell-in-VSCode'
 jobs:
   deploy:
     runs-on: ubuntu-latest

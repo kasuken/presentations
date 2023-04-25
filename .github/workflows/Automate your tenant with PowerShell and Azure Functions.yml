@@ -1,13 +1,13 @@
-name: Publish - Coding in the Cloud with GitHub Codespaces
+name: Publish - Automate your tenant with PowerShell and Azure Functions
 on: 
   workflow_dispatch:
   push:
     paths: 
-    - 'Coding in the Cloud with GitHub Codespaces/**'
+    - 'Automate your tenant with PowerShell and Azure Functions/**'
 env:
   ROOT_FOLDER: 'presentations'
-  TALK_FOLDER: 'Coding in the Cloud with GitHub Codespaces'
-  OUT_FOLDER: 'Coding-in-the-Cloud-with-GitHub-Codespaces'
+  TALK_FOLDER: 'Automate your tenant with PowerShell and Azure Functions'
+  OUT_FOLDER: 'Automate-your-tenant-with-PowerShell-and-Azure-Functions'
 jobs:
   deploy:
     runs-on: ubuntu-latest
