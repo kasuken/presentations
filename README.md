@@ -1,5 +1,5 @@
 # Presentations
-My presentations material for community events and and conferences
+My presentations material for community events and conferences
 
 ## Slides
 - [Automate your tenant with PowerShell and Azure Functions](https://kasuken.github.io/presentations/Automate-your-tenant-with-PowerShell-and-Azure-Functions/) 
