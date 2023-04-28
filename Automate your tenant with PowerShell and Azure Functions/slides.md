@@ -43,19 +43,33 @@ transition: slide-left
 
 # What is an Azure Function?
 
+Azure Functions are serverless applications that run on-demand in response to events or triggers. They are great for building microservices, integrations, or automation tasks.
 
 ---
 transition: slide-left
 ---
 
+# Pre-requisites
+
+- Azure Subscription
+- Azure Functions Core Tools
+- PowerShell 7.2
+- .NET 6.0 runtime
+- Visual Studio Code
+- PowerShell extension for Visual Studio Code
+- Azure Functions extension
+- Azurite Extension for Visual Studio Code
 
 
 ---
 
 # References
 
-- https://azure.com
-
+- https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-powershell
+- https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-powershell
+- https://learn.microsoft.com/en-us/azure/azure-functions/functions-develop-local
+- https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azurite?tabs=visual-studio-code
+- https://arminreiter.com/2017/02/azure-functions-time-trigger-cron-cheat-sheet/
 
 ---
 transition: slide-up
