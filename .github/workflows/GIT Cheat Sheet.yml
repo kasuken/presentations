@@ -3,11 +3,11 @@ on:
   workflow_dispatch:
   push:
     paths: 
-    - 'GIT Cheat Sheet/**'
+    - 'GIT Up and Go/**'
 env:
   ROOT_FOLDER: 'presentations'
-  TALK_FOLDER: 'GIT Cheat Sheet'
-  OUT_FOLDER: 'GIT-Cheat-Sheet'
+  TALK_FOLDER: 'GIT Up and Go'
+  OUT_FOLDER: 'git-up-and-go'
 jobs:
   deploy:
     runs-on: ubuntu-latest

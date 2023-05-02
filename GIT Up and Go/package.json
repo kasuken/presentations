@@ -1,5 +1,5 @@
 {
-  "name": "git-cheat-sheet",
+  "name": "git-up-and-go",
   "private": true,
   "scripts": {
     "build": "slidev build",
@@ -9,7 +9,6 @@
   "dependencies": {
     "@slidev/cli": "^0.40.16",
     "@slidev/theme-default": "*",
-    "@slidev/theme-seriph": "*",
-    "slidev-theme-dotnet-junkie": "^0.0.20"
+    "@slidev/theme-seriph": "*"
   }
 }
