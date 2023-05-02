@@ -1,4 +1,4 @@
-name: Publish - GIT Cheat Sheet
+name: Publish - GIT Up & Go
 on: 
   workflow_dispatch:
   push:
