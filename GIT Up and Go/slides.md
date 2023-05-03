@@ -12,8 +12,6 @@ highlighter: shiki
 lineNumbers: false
 # page transition
 transition: slide-left
-# use UnoCSS
-css: unocss
 ---
 
 # GIT Up and Go
