@@ -84,7 +84,7 @@ git config --global core.editor code
 3. Check your configuration: To check that your configuration has been set correctly, type the following command in the terminal:
 
 ```bash
-git config --list
+git config --list # or git config --global --list
 ```
 
 This will display a list of your Git configuration settings, including your name, email address, and text editor.
@@ -99,7 +99,7 @@ This will display a list of your Git configuration settings, including your name
 3. Initialize Git: Type the following command to initialize Git in your repository:
 
 ```bash
-git init
+git init 
 ```
 
 This will create a new Git repository in the folder you have navigated to. It creates an hidden folder to keep track of changes.
@@ -138,7 +138,7 @@ This will add all files in the current directory to the staging area.
 2. Commit changes: Once you have staged or added files to your repository, you'll need to commit your changes. Use the "git commit" command followed by a message describing the changes you made. For example:
 
 ```bash
-git commit -m "Add index.html file"
+git commit -m "Add index.html file" # commit with message
 ```
 
 This will create a new commit with the changes you made to the repository.
@@ -165,13 +165,13 @@ git commit -a -m "my commit message"
 Displays a list of commit history for a repository
 
 ```bash
-git log
+git log # list all commits
 ```
 
 Displays a condensed version of the commit history in a single line per commit.
 
 ```bash
-git log --online
+git log --online # condensed version
 ```
 
 ---
@@ -181,38 +181,77 @@ git log --online
 ### Creating a new branch
 
 ```bash
-git branch '<name>'
+git branch '<name>' # create a new branch <name>
 ```  
 
 ### Listing all available branches
   
 ```bash
-git branch
+git branch # list all available branches
 ```  
 
 ### Switching to another branch
 
 ```bash
-git branch checkout '<name>'
+git branch checkout '<name>' # switch to the branch <name>
 ```  
 
 ### Creating a new branch and switching to it
 
 ```bash  
-git checkout -b '<name>'
+git checkout -b '<name>' # create a new branch <name> and switch to it
 ```  
 
 ### Deleting a branch
 
 ```bash
-git branch -d '<name>'
+git branch -d '<name>' # delete the branch <name>
 ```
 
 ### Merging two branches
-merge the current branch with the branch in the parameter
 
 ```bash
-git merge '<name>'
+git merge '<name>' # merge the branch <name> into the current branch
+```
+
+---
+
+# Working with remotes
+
+### Adding a remote repository
+
+```bash
+git remote add '<name>' '<url>'
+```
+
+### Listing all available remote repositories
+
+```bash
+git remote # list all available remote repositories
+```
+
+### Pushing changes to a remote repository
+
+```bash
+git push '<remote>' '<branch>' # push the current branch to the remote repository
+```
+
+### Pulling changes from a remote repository
+
+```bash
+git pull '<remote>' '<branch>' # pull the changes from the remote repository into the current branch
+```
+
+### Fetching changes from a remote repository
+
+```bash
+git fetch '<remote>' '<branch>' # fetch the changes from the remote repository into the current branch
+```
+
+### Cloning a remote repository
+
+```bash
+git clone '<url>' # clone the remote repository into a new directory
 ```
 
 ---

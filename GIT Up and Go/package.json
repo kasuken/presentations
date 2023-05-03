@@ -13,6 +13,6 @@
   },
   "devDependencies": {
     "playwright-chromium": "^1.33.0",
-    "slidev-theme-dracula": "^0.1.0",
+    "slidev-theme-dracula": "^0.1.0"
   }
 }
