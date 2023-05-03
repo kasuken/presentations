@@ -1,6 +1,6 @@
 ---
 # try also 'default' to start simple
-theme: default
+theme: dracula
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
 # background: https://source.unsplash.com/collection/94734566/1920x1080
@@ -130,6 +130,10 @@ git add .
 
 This will add all files in the current directory to the staging area.
 
+---
+
+# Committing changes
+
 1. Check the status of your repository again: After adding files to your repository, use the "git status" command again to check the status of your repository. You should see that the files you added are now listed as "changes to be committed."
 2. Commit changes: Once you have staged or added files to your repository, you'll need to commit your changes. Use the "git commit" command followed by a message describing the changes you made. For example:
 
@@ -152,6 +156,22 @@ you don't need to stage the files with the command "git add ." but the files wil
 
 ```bash
 git commit -a -m "my commit message"
+```
+
+---
+
+# Viewing commit history
+
+Displays a list of commit history for a repository
+
+```bash
+git log
+```
+
+Displays a condensed version of the commit history in a single line per commit.
+
+```bash
+git log --online
 ```
 
 ---
@@ -189,11 +209,47 @@ git branch -d '<name>'
 ```
 
 ### Merging two branches
+merge the current branch with the branch in the parameter
 
 ```bash
-merge the current branch with the branch in the parameter
 git merge '<name>'
 ```
+
+---
+
+# Glossary #1
+
+- Git: A distributed version control system that allows you to track changes to files and collaborate with others on projects.
+
+- Repository: A place where Git stores all the files and their history for a particular project.
+
+- Commit: A saved snapshot of changes to one or more files in the repository.
+
+- Branch: A separate line of development that diverges from the main codebase, allowing you to make changes without affecting the main codebase.
+
+- Merge: Combining changes from one branch into another.
+
+- Pull: Fetching changes from a remote repository and merging them into a local branch.
+
+- Push: Sending changes from a local branch to a remote repository.
+
+- Remote: A repository that is hosted on a different server than the local repository.
+
+---
+
+# Glossary #2
+
+- Fork: A copy of a repository that allows you to make changes without affecting the original repository.
+
+- Clone: Creating a copy of a remote repository on your local machine.
+
+- Pull Request: A request to merge changes from one branch or fork into another branch, typically used in open source projects to facilitate collaboration.
+
+- Rebase: Changing the base of a branch to a different commit, typically used to incorporate changes from another branch.
+
+- Tag: A named reference to a specific commit in the repository history, often used to mark important versions or releases.
+
+- Conflict: A situation where Git is unable to automatically merge changes between two branches, requiring manual intervention to resolve the differences.
 
 ---
 
@@ -202,6 +258,15 @@ git merge '<name>'
 [Awesome Cheat Sheet](https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/git.sh)
 
 ---
-layout: end
+layout: image-left
+image: https://sessionize.com/image/abf4-400o400o2-SanRv1wrTH7HnRBP6Lx99x.png
 ---
+
+# Emanuele Bartolesi
+Microsoft MVP & GitHub Star
+
+- @kasuken
+- github.com/kasuken
+- linkedin.com/in/bartolesiemanuele
+- emanuelebartolesi.com
 
