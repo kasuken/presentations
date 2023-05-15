@@ -25,7 +25,7 @@ transition: slide-left
 css: unocss
 ---
 
-# Coding in the Cloud with GitHub Codespaces
+# Public Speaking is not only for Events
 
 Microsoft MVP & GitHub Star ⭐
 
@@ -112,15 +112,33 @@ transition: slide-left
 To handle questions and feedback, you need to invite, acknowledge, listen, respond, and thank your audience. You also need to avoid ignoring, dismissing, rambling, or getting defensive with your audience. You also need to end on a positive note and restate your main message and goal.
 
 ---
+layout: image-left
 
-# References
+# the image source
+image: https://cdn.syncfusion.com/content/images/downloads/ebook/ebook-cover/public-speaking-for-geeks-succinctly.png
 
-- https://github.com/features/codespaces
-- https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/about-codespaces
-- https://github.com/microsoft/vscode-dev-containers/tree/master/containers/codespaces-linux
-- https://code.visualstudio.com/docs/remote/devcontainerjson-reference
-- https://github.com/microsoft/vscode-dev-containers
+# a custom class name to the content
+class: my-cool-content-on-the-right
+---
 
+Public Speaking for Geeks
+
+https://www.syncfusion.com/succinctly-free-ebooks/public-speaking-for-geeks-succinctly
+
+
+---
+layout: image-right
+
+# the image source
+image: https://cdn.syncfusion.com/content/images/downloads/ebook/ebook-cover/Beyond-Public-Speaking-For-Geeks-Succinctly.png
+
+# a custom class name to the content
+class: my-cool-content-on-the-right
+---
+
+Beyond Public Speaking for Geeks
+
+https://www.syncfusion.com/succinctly-free-ebooks/beyond-public-speaking-for-geeks-succinctly
 
 ---
 transition: slide-up

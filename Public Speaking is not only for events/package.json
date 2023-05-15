@@ -1,0 +1,16 @@
+{
+  "name": "public-speaking-is-not-only-for-events",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.40.16",
+    "@slidev/theme-default": "*",
+    "@slidev/theme-seriph": "*",
+    "slidev-theme-dotnet-junkie": "0.0.20",
+    "slidev-theme-dracula": "^0.1.0"
+  }
+}
