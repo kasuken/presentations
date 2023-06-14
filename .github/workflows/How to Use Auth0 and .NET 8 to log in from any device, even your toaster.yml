@@ -1,0 +1,35 @@
+name: Publish - How to Use Auth0 and .NET 8 to log in from any device, even your toaster
+on: 
+  workflow_dispatch:
+  push:
+    paths: 
+    - 'How to Use Auth0 and .NET 8 to log in from any device, even your toaster/**'
+env:
+  ROOT_FOLDER: 'presentations'
+  TALK_FOLDER: 'How to Use Auth0 and .NET 8 to log in from any device, even your toaster'
+  OUT_FOLDER: 'How-to-Use-Auth0-and-NET-8-to-log-in-from-any-device'
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: './${{ env.TALK_FOLDER }}'
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+      - name: Install dependencies
+        run: npm install
+      - name: Install slidev
+        run:  npm i -g @slidev/cli
+      - name: Build
+        run: slidev build --base '${{ env.ROOT_FOLDER }}/${{ env.OUT_FOLDER }}/' --out './dist/${{ env.OUT_FOLDER }}'    
+      - name: Deploy pages
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          build_dir: './${{ env.TALK_FOLDER }}/dist'
+          keep_history: true
+          jekyll: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
