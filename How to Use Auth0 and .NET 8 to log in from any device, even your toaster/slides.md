@@ -1,6 +1,6 @@
 ---
 # try also 'default' to start simple
-theme: default
+theme: slidev-theme-dotnet-junkie
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: https://unsplash.com/collections/94734566/slidev
@@ -150,3 +150,18 @@ IRestResponse response = client.Execute(request);
 : [Device Authorization Flow](https://auth0.com/docs/get-started/authentication-and-authorization-flow/device-authorization-flow)
 : [Call Your API Using the Device Authorization Flow](https://auth0.com/docs/get-started/authentication-and-authorization-flow/call-your-api-using-the-device-authorization-flow)
 : [Mobile Device Login Flow Best Practices](https://auth0.com/docs/get-started/authentication-and-authorization-flow/mobile-device-login-flow-best-practices)
+
+---
+transition: slide-up
+layout: speaker-info
+
+headerMessage: Thanks for all the fish.
+speakerName: Emanuele Bartolesi
+imageSrc: https://bit.ly/3V4bBPA
+jobTitle: Microsoft 365 Architect
+info1: Microsoft MVP & GitHub Star ⭐
+info2: 
+social1: kasuken
+social2: emanuelebartolesi.com
+social3: emanueleb@outolook.com
+---
