@@ -1,0 +1,15 @@
+{
+  "name": "microsoft-teams-meeting-extensions",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.42.4",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "slidev-theme-dotnet-junkie": "0.0.20"
+  }
+}

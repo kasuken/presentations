@@ -1,0 +1,16 @@
+{
+  "name": "how-to-use-auth0-and--net-8-to-log-in-from-any-device--even-your-toaster",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.42.4",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "slidev-theme-dotnet-junkie": "0.0.26",
+    "slidev-theme-the-unnamed": "0.0.10"
+  }
+}
