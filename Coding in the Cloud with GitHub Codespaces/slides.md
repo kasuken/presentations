@@ -41,75 +41,127 @@ Emanuele Bartolesi
 transition: slide-left
 ---
 
-# Preparation?
+# What is GitHub Codespaces?
 
-- 👯 Know your purpose and audience
-- 🔍 Research and organize your content
-- 🎬 Practice and rehearse your presentation
-- 🗣️ Review and revise your presentation
+GitHub Codespaces is a cloud-based development environment that lets you code from anywhere.
 
+It's a fully-featured IDE that runs in the cloud, and it's free for public repositories.
 
----
-transition: slide-left
----
+- 🍔 Ready to use development environment
+- 🌍 Accessible from anywhere
+- 💻 You can develop from your cell phone!
+- 📱 You can develop from iPad!
+- 😱 Develop from your Chromebook!
+- ⌛ Reduced configuration time
+- 🦺 Don't keep sources local
 
-# Structure and deliver
-
-- 🌠 Start with a strong introduction
-- 👉🏻 Develop your main points in the body
-- 🏁 End with a memorable conclusion
-- 😱 Use various techniques to capture and maintain attention, convey message, and create impression
-- 🎭 Be yourself, be natural, and be confident
 
 ---
 transition: slide-left
 ---
 
-# Handle questions and feedback
+# What you can do with Codespaces
 
-- 🙏🏻 Invite, acknowledge, listen, respond, and thank your audience
-- 🪖 Avoid ignoring, dismissing, rambling, or getting defensive with your audience
-- 📝 End on a positive note and restate your main message and goal
-
----
-transition: slide-left
----
-
-# Takeaway 1
-
-Public speaking is a skill that can benefit you in many aspects of your life, but it can also be challenging and intimidating for many people.
+- 🔒 Every developer can create their own Codespaces
+- 🙅🏻‍♂️ No one can access your Codespaces
+- 🐣 Each Codespace is associated with a project or branch
+- 👨🏻‍💻 You can work directly online
+- 🦄 You can connect to Codespaces with Visual Studio Code
+- 🚀 You can connect to Codespaces with Visual Studio 2019/2022
+- 🤞 You can connect to Codespaces with JetBrains Rider
+- 🎨 You can configure your container as you want
 
 ---
 transition: slide-left
 ---
 
-# Takeaway 2
-
-To overcome these challenges and become a better public speaker, you need to follow three main steps: prepare, structure and deliver, and handle questions and feedback.
+---
+# Demo
 
 ---
-transition: slide-left
----
 
-# Takeaway 3
+# devcontainer.json
+machine type
 
-To prepare for a presentation, you need to know your purpose and audience, research and organize your content, practice and rehearse your presentation, and review and revise your presentation.
+```json
+"hostRequirements": {
+   "cpus": 8,
+   "memory": "8gb",
+   "storage": "32gb"
+}
 
----
-transition: slide-left
----
-
-# Takeaway 4
-
-To structure and deliver your content, you need to start with a strong introduction, develop your main points in the body, and end with a memorable conclusion. You also need to use various techniques to capture and maintain the attention of your audience, convey your message clearly and persuasively, and create a lasting impression.
+```
 
 ---
-transition: slide-left
+
+# devcontainer.json
+features
+
+```json
+"features": {
+     "ghcr.io/devcontainers/features/terraform:1": {
+         "version": "1.1",
+         "tflint": "latest"
+     },
+}
+
+```
+
 ---
 
-# Takeaway 5
+# devcontainer.json
+open files
 
-To handle questions and feedback, you need to invite, acknowledge, listen, respond, and thank your audience. You also need to avoid ignoring, dismissing, rambling, or getting defensive with your audience. You also need to end on a positive note and restate your main message and goal.
+```json
+"customizations": {
+  "codespaces": {
+    "openFiles": [
+      "README.md",
+      "scripts/tsconfig.json",
+      "docs/main/CODING_STANDARDS.md"
+    ]
+  }
+}
+
+```
+
+---
+
+# devcontainer.json
+
+```json
+{
+  "name": "C# (.NET)",
+  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+  "image": "mcr.microsoft.com/devcontainers/dotnet:0-7.0",
+  "features": {
+    "ghcr.io/devcontainers/features/dotnet:1": {}
+  },
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [5000],
+  // "portsAttributes": {
+  //   "5001": {
+  //     "protocol": "https"
+  //   }
+  // }
+
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": "dotnet restore",
+
+  // Configure tool-specific properties.
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": [
+        "streetsidesoftware.code-spell-checker"
+      ]
+    }
+  }
+}
+
+```
 
 ---
 
