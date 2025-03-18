@@ -2,14 +2,16 @@
 background: https://source.unsplash.com/collection/94734566/1920x1080
 title: "Think Small, Win Big: The Unexpected Power of Small Language Models"
 author: "Emanuele Bartolesi"
-date: "[Event Name, Date]"
 transition: slide-left
 class: text-center
+theme: slidev-theme-dotnet-junkie
+highlighter: shiki
 ---
 
 # Think Small, Win Big
 ## The Unexpected Power of Small Language Models
-### Emanuele Bartolesi | Senior Cloud Engineer
+## ---
+### Emanuele Bartolesi | Senior Cloud Engineer @Xebia
 
 ---
 
@@ -28,7 +30,7 @@ class: text-center
   - Trained on **fewer parameters** but still effective.
   - More **efficient, faster, and cheaper**.
   - Ideal for **targeted applications**.
-- **LLM vs. SLM comparison** 📊
+  - Max size: **7B parameters**.
 
 ---
 
@@ -36,10 +38,11 @@ class: text-center
 | Model          | Size | Key Features |
 |---------------|------|--------------|
 | **Mistral 7B** | 7B  | Open-weight, strong reasoning capabilities |
-| **Llama 2 7B/13B** | 7B/13B | Balances efficiency and accuracy |
-| **Phi-2** | 2.7B | Microsoft’s small yet powerful model |
+| **Hermes Llama 3 3B/13B** | 7B/13B | Balances efficiency and accuracy |
+| **Phi-3** | 3.8B | Microsoft’s small yet powerful model |
 | **Gemma 2B/7B** | 2B/7B | Google’s efficient model series |
 | **Falcon 7B** | 7B  | Open-source, optimized for speed |
+| **DeepSeek R1 Distill** | 7B | Distilled from larger models, high accuracy |
 
 ---
 
@@ -92,7 +95,6 @@ class: text-center
 1. **Retrieve** relevant data.
 2. **Rank** most useful context.
 3. **Generate** responses using SLM.
-- **Demo (if applicable)** 🎥
 
 ---
 
