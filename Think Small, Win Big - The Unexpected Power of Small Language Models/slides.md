@@ -1,5 +1,5 @@
 ---
-background: https://source.unsplash.com/collection/94734566/1920x1080
+background: [https://source.unsplash.com/collection/94734566/1920x1080](https://images.unsplash.com/photo-1597733336794-12d05021d510?q=80&w=3948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 title: "Think Small, Win Big: The Unexpected Power of Small Language Models"
 author: "Emanuele Bartolesi"
 date: "[Event Name, Date]"
