@@ -3,10 +3,10 @@ on:
   workflow_dispatch:
   push:
     paths: 
-    - 'Think Small, Win Big - The Unexpected Power of Small Language Models/**'
+    - 'Think Small Win Big - The Unexpected Power of Small Language Models/**'
 env:
   ROOT_FOLDER: 'presentations'
-  TALK_FOLDER: 'Think Small, Win Big - The Unexpected Power of Small Language Models'
+  TALK_FOLDER: 'Think Small Win Big - The Unexpected Power of Small Language Models'
   OUT_FOLDER: 'Think-Small-Win-Big-The-Unexpected-Power-of-Small-Language-Models'
 jobs:
   deploy:

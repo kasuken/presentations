@@ -10,3 +10,4 @@ My presentations material for community events and conferences
 - [How to Use Auth0 and .NET 8 to log in from any device, even your toaster](https://kasuken.github.io/presentations/How-to-Use-Auth0-and-NET-8-to-log-in-from-any-device/)
 - [Microsoft Teams Meeting extensions](https://kasuken.github.io/presentations/Microsoft-Teams-Meeting-extensions/)
 - [The Secret to Living a Better Life with a Second Brain](https://kasuken.github.io/presentations/The-Secret-to-Living-a-Better-Life-with-a-Second-Brain/)
+- [Think Small, Win Big - The Unexpected Power of Small Language Models](https://kasuken.github.io/presentations/Think-Small-Win-Big-The-Unexpected-Power-of-Small-Language-Models/)
