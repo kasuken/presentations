@@ -28,7 +28,7 @@ jobs:
       - name: Deploy pages
         uses: crazy-max/ghaction-github-pages@v3
         with:
-          build_dir: './${{ env.OUT_FOLDER }}/dist'
+          build_dir: './dist/${{ env.OUT_FOLDER }}'
           keep_history: true
           jekyll: false
         env:
