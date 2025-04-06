@@ -45,8 +45,8 @@ jobs:
 
       - name: Prepare build folder
         run: |
-          mkdir -p public/${{ env.OUT_FOLDER }}
-          cp -r '/dist/${{ env.OUT_FOLDER }}/*' './public/${{ env.OUT_FOLDER }}/'
+          mkdir -p "./public/${{ env.OUT_FOLDER }}"
+          cp -r "./dist/${{ env.OUT_FOLDER }}/." "./public/${{ env.OUT_FOLDER }}/"
 
       - name: Deploy pages
         uses: crazy-max/ghaction-github-pages@v4
