@@ -50,3 +50,5 @@ jobs:
           build_dir: './${{ env.TALK_FOLDER }}/dist/${{ env.OUT_FOLDER }}'
           keep_history: true
           jekyll: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
