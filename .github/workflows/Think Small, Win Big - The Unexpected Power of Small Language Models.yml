@@ -8,29 +8,51 @@ env:
   ROOT_FOLDER: 'presentations'
   TALK_FOLDER: 'Think Small Win Big The Unexpected Power of Small Language Models'
   OUT_FOLDER: 'Think-Small-Win-Big-The-Unexpected-Power-of-Small-Language-Models'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: './${{ env.TALK_FOLDER }}'
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: 'lts/*'
+
+      - name: Setup @antfu/ni
+        run: npm i -g @antfu/ni
+
       - name: Install dependencies
-        run: npm install
-      - name: Install slidev
-        run:  npm i -g @slidev/cli
+        run: nci
+
       - name: Build
-        run: slidev build --base '${{ env.ROOT_FOLDER }}/${{ env.OUT_FOLDER }}/' --out './dist/${{ env.OUT_FOLDER }}'    
-      - name: Deploy pages
-        uses: crazy-max/ghaction-github-pages@v4
+        run: nr build --base /${{github.event.repository.name}}/${{env.TALK_FOLDER}}
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - uses: actions/upload-pages-artifact@v3
         with:
-          target_branch: gh-pages
-          build_dir: './dist/${{ env.OUT_FOLDER }}'
-          keep_history: true
-          jekyll: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          path: './dist/${{ env.OUT_FOLDER }}'
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
