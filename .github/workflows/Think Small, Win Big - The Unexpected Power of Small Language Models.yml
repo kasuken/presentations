@@ -38,7 +38,7 @@ jobs:
         run: nci
 
       - name: Build
-        run: nr build --base '/${{github.event.repository.name}}/${{env.TALK_FOLDER}}' --out './dist/${{ env.OUT_FOLDER }}'  
+        run: nr build --base "/${{ github.event.repository.name }}/${{ env.TALK_FOLDER }}" --out "./dist/${{ env.OUT_FOLDER }}"  
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -47,6 +47,6 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: gh-pages
-          build_dir: '/dist/${{ env.OUT_FOLDER }}'
+          build_dir: './${{ env.TALK_FOLDER }}/dist/${{ env.OUT_FOLDER }}'
           keep_history: true
           jekyll: false
