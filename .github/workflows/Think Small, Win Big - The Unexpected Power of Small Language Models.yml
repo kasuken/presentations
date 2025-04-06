@@ -33,7 +33,7 @@ jobs:
         run: npm i -g @antfu/ni
 
       - name: Install dependencies
-        run: nci
+        run: npm ci
 
       - name: Build
         run: nr build --base /${{github.event.repository.name}}/${{env.TALK_FOLDER}}
