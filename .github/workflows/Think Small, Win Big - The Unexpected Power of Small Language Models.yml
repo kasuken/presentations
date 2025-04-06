@@ -43,18 +43,10 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - uses: actions/upload-pages-artifact@v3
+      - name: Deploy Pages
+        uses: crazy-max/ghaction-github-pages@v4
         with:
-          path: './dist/${{ env.OUT_FOLDER }}'
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    needs: build
-    runs-on: ubuntu-latest
-    name: Deploy
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          target_branch: gh-pages
+          build_dir: './dist/${{ env.OUT_FOLDER }}'
+          keep_history: true
+          jekyll: false
