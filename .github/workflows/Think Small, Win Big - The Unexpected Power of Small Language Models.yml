@@ -1,16 +1,18 @@
 name: Publish - Think Small, Win Big - The Unexpected Power of Small Language Models
-on: 
+
+on:
   workflow_dispatch:
   push:
-    paths: 
-    - 'Think Small Win Big The Unexpected Power of Small Language Models/**'
+    paths:
+      - 'Think Small Win Big The Unexpected Power of Small Language Models/**'
+
 env:
   ROOT_FOLDER: 'presentations'
   TALK_FOLDER: 'Think Small Win Big The Unexpected Power of Small Language Models'
   OUT_FOLDER: 'Think-Small-Win-Big-The-Unexpected-Power-of-Small-Language-Models'
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -21,34 +23,47 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     defaults:
       run:
         working-directory: './${{ env.TALK_FOLDER }}'
-    steps:
-      - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 'lts/*'
+          cache: 'npm'
 
-      - name: Setup @antfu/ni
-        run: npm i -g @antfu/ni
+      - name: Install @antfu/ni globally
+        run: npm install -g @antfu/ni
 
       - name: Install dependencies
         run: nci
 
-      - name: Build
-        run: nr build --base "/${{ github.event.repository.name }}/${{ env.TALK_FOLDER }}" --out "./dist/${{ env.OUT_FOLDER }}"  
+      - name: Build Slidev presentation
+        run: nr build --base "/${{ github.event.repository.name }}/${{ env.TALK_FOLDER }}" --out "./dist/${{ env.OUT_FOLDER }}"
 
-      - name: Setup Pages
+      - name: Setup GitHub Pages
         uses: actions/configure-pages@v4
 
-      - name: Deploy Pages
+      - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: gh-pages
           build_dir: './${{ env.TALK_FOLDER }}/dist/${{ env.OUT_FOLDER }}'
           keep_history: true
           jekyll: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - name: Deploy GitHub Pages site
+        uses: actions/deploy-pages@v4
