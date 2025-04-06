@@ -43,11 +43,16 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: Deploy Pages
+      - name: Prepare build folder
+        run: |
+          mkdir -p public/${{ env.OUT_FOLDER }}
+          cp -r ./${{ env.TALK_FOLDER }}/dist/${{ env.OUT_FOLDER }}/* ./public/${{ env.OUT_FOLDER }}/
+            
+      - name: Deploy pages
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: gh-pages
-          build_dir: './${{ env.TALK_FOLDER }}/dist/${{ env.OUT_FOLDER }}'
+          build_dir: './public'
           keep_history: true
           jekyll: false
         env:
