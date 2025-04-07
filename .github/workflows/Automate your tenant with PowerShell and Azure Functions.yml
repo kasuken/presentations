@@ -1,35 +1,14 @@
 name: Publish - Automate your tenant with PowerShell and Azure Functions
+
 on: 
   workflow_dispatch:
   push:
     paths: 
     - 'Automate your tenant with PowerShell and Azure Functions/**'
-env:
-  ROOT_FOLDER: 'presentations'
-  TALK_FOLDER: 'Automate your tenant with PowerShell and Azure Functions'
-  OUT_FOLDER: 'Automate-your-tenant-with-PowerShell-and-Azure-Functions'
+
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: './${{ env.TALK_FOLDER }}'
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '14'
-      - name: Install dependencies
-        run: npm install
-      - name: Install slidev
-        run:  npm i -g @slidev/cli
-      - name: Build
-        run: slidev build --base '${{ env.ROOT_FOLDER }}/${{ env.OUT_FOLDER }}/' --out './dist/${{ env.OUT_FOLDER }}'    
-      - name: Deploy pages
-        uses: crazy-max/ghaction-github-pages@v3
-        with:
-          build_dir: './${{ env.TALK_FOLDER }}/dist'
-          keep_history: true
-          jekyll: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  publish:
+    uses: ./.github/workflows/publish-presentation.yml
+    with:
+      talk_folder: 'Automate your tenant with PowerShell and Azure Functions'
+      out_folder: 'Automate-your-tenant-with-PowerShell-and-Azure-Functions'
