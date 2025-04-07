@@ -1,54 +1,14 @@
 name: Publish - Think Small, Win Big - The Unexpected Power of Small Language Models
+
 on: 
   workflow_dispatch:
   push:
     paths: 
-    - 'Think Small Win Big The Unexpected Power of Small Language Models/**'
-env:
-  ROOT_FOLDER: 'presentations'
-  TALK_FOLDER: 'Think Small Win Big The Unexpected Power of Small Language Models'
-  OUT_FOLDER: 'Think-Small-Win-Big-The-Unexpected-Power-of-Small-Language-Models'
-
-permissions:
-  contents: write
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: false
+      - 'Think Small Win Big The Unexpected Power of Small Language Models/**'
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: './${{ env.TALK_FOLDER }}'
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 'lts/*'
-
-      - name: Setup @antfu/ni
-        run: npm i -g @antfu/ni
-
-      - name: Install dependencies
-        run: nci
-
-      - name: Build
-        run: nr build --base "/${{ github.event.repository.name }}/${{ env.OUT_FOLDER }}" --out "./dist/${{ env.OUT_FOLDER }}"  
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      - name: Deploy pages
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: gh-pages
-          build_dir: './${{ env.TALK_FOLDER }}/dist/'
-          keep_history: true
-          jekyll: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  publish:
+    uses: ./.github/workflows/publish-presentation.yml
+    with:
+      talk_folder: 'Think Small Win Big The Unexpected Power of Small Language Models'
+      out_folder: 'Think-Small-Win-Big-The-Unexpected-Power-of-Small-Language-Models'

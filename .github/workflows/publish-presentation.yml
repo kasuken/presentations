@@ -1,0 +1,55 @@
+name: Publish Slidev Presentation
+
+on:
+  workflow_call:
+    inputs:
+      talk_folder:
+        required: true
+        type: string
+      out_folder:
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: './${{ inputs.talk_folder }}'
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+
+      - name: Setup @antfu/ni
+        run: npm i -g @antfu/ni
+
+      - name: Install dependencies
+        run: nci
+
+      - name: Build
+        run: nr build --base "/${{ github.event.repository.name }}/${{ inputs.out_folder }}" --out "./dist/${{ inputs.out_folder }}"
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Deploy pages
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: gh-pages
+          build_dir: './${{ inputs.talk_folder }}/dist/'
+          keep_history: true
+          jekyll: false
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
