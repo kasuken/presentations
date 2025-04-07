@@ -12,6 +12,7 @@ highlighter: shiki
 ## The Unexpected Power of Small Language Models
 ## ---
 ### Emanuele Bartolesi | Senior Cloud Engineer @Xebia
+### Charlize Vogelsinger | The Best @Xebia
 
 ---
 
@@ -91,17 +92,87 @@ highlighter: shiki
 
 ---
 
-## How an SLM + RAG Pipeline Works
-1. **Retrieve** relevant data.
-2. **Rank** most useful context.
-3. **Generate** responses using SLM.
+## What is Retrieval-Augmented Generation (RAG)? 🤔
+- **RAG combines retrieval and generation** to enhance AI capabilities.
+- **Retrieval:** Fetches relevant information from external knowledge sources.
+- **Augmentation:** Provides the AI model with context-rich data.
+- **Generation:** Produces accurate, context-aware responses.
 
 ---
 
-## Real-World Success Stories
-- **Open-source SLM adoption**
-- **Enterprises deploying SLMs for efficiency**
-- **SLMs in regulated industries (healthcare, finance, legal)**
+## Key Benefits of RAG:
+✅ **Improves accuracy** by grounding responses in real data.  
+✅ **Reduces hallucinations** by relying on external sources.  
+✅ **Dynamic adaptability** to new information without retraining.  
+✅ **Enhances user experience** with more relevant and accurate responses.
+✅ **Enables real-time updates** to knowledge bases.
+✅ **Supports domain-specific applications** with tailored responses.
+✅ **Scalable and flexible** for various use cases.
+✅ **Cost-effective** by leveraging existing data sources.
+
+---
+
+# Real-World Use Cases for SLMs 🌍
+
+### **Healthcare** 🏥
+- **Medical assistants** for doctors and patients.
+- **Summarizing medical records** for faster diagnosis.
+- **Privacy-focused on-premise AI** for sensitive data.
+
+--
+
+### **Finance** 💰
+- **Fraud detection** with real-time analysis.
+- **Personalized financial advice** for customers.
+- **Automated compliance checks** for regulatory requirements.
+
+---
+
+# Real-World Use Cases for SLMs 🌍
+
+### **Legal** ⚖️
+- **Document summarization** for legal professionals.
+- **Contract analysis** to identify risks and inconsistencies.
+- **On-premise AI** for secure handling of sensitive legal data.
+
+--
+
+### **Customer Support** 📞
+- **Chatbots** for faster and more accurate responses.
+- **Ticket classification** to prioritize customer issues.
+- **Multilingual support** with low latency.
+
+---
+
+# Real-World Use Cases for SLMs 🌍
+
+### **Retail & E-commerce** 🛒
+- **Personalized product recommendations**.
+- **Inventory management** with predictive analytics.
+- **Dynamic pricing models** based on market trends.
+
+--
+
+### **Education** 🎓
+- **AI tutors** for personalized learning experiences.
+- **Content generation** for course materials.
+- **Language learning assistants** for students.
+
+---
+
+# Real-World Use Cases for SLMs 🌍
+
+### **Manufacturing** 🏭
+- **Predictive maintenance** for machinery.
+- **Supply chain optimization** with real-time data.
+- **Quality control** using AI-powered analysis.
+
+--
+
+### **Media & Entertainment** 🎥
+- **Content moderation** for user-generated platforms.
+- **Scriptwriting assistance** for creative professionals.
+- **Personalized recommendations** for streaming services.
 
 ---
 
