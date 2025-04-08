@@ -36,7 +36,14 @@ jobs:
         run: npm i -g @antfu/ni
 
       - name: Install dependencies
-        run: nci
+        run: |
+          if [ -e yarn.lock ]; then
+          yarn install --frozen-lockfile
+          elif [ -e package-lock.json ]; then
+          npm ci
+          else
+          npm i
+          fi
 
       - name: Build
         run: nr build --base "/${{ github.event.repository.name }}/${{ inputs.out_folder }}" --out "./dist/${{ inputs.out_folder }}"
