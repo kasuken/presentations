@@ -184,7 +184,8 @@ highlighter: shiki
 ## The Future of SLMs 🔮
 - **Hybrid models:** LLMs + SLMs working together.
 - **More open-source alternatives** gaining traction.
-- **SLMs enabling AI democratization.**
+- **Privacy-First AI** for enterprises.
+- **SLMs enabling "AI democratization".**
 
 ---
 
