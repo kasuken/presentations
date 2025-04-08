@@ -1,5 +1,5 @@
 ---
-background: https://source.unsplash.com/collection/94734566/1920x1080
+background: https://plus.unsplash.com/premium_photo-1718306013082-eb1c58ff973a
 title: "Think Small, Win Big: The Unexpected Power of Small Language Models"
 author: "Emanuele Bartolesi"
 transition: slide-left
