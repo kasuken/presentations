@@ -12,23 +12,6 @@ highlighter: shiki
 ## ---
 ### Emanuele Bartolesi | Senior Cloud Engineer @Xebia
 
-
----
-
----
-background: https://plus.unsplash.com/premium_photo-1718306013082-eb1c58ff973a
-title: "Think Small, Win Big: The Unexpected Power of Small Language Models"
-author: "Emanuele Bartolesi"
-transition: slide-left
-class: text-center
-theme: unicorn
-highlighter: shiki
----
-
-# The Secret to Living a Better Life with a Second Brain 🧠✨
-## ---
-### Emanuele Bartolesi | Senior Cloud Engineer @Xebia
-
 ---
 
 ## What is a Second Brain? 🧠
