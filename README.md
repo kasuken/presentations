@@ -11,3 +11,4 @@ My presentations material for community events and conferences
 - [Microsoft Teams Meeting extensions](https://kasuken.github.io/presentations/Microsoft-Teams-Meeting-extensions/)
 - [The Secret to Living a Better Life with a Second Brain](https://kasuken.github.io/presentations/The-Secret-to-Living-a-Better-Life-with-a-Second-Brain/)
 - [Think Small, Win Big - The Unexpected Power of Small Language Models](https://kasuken.github.io/presentations/Think-Small-Win-Big-The-Unexpected-Power-of-Small-Language-Models/)
+- [How to Build a Smart Email Support System with CSharp and OpenAI](https://kasuken.github.io/presentations/How-to-Build-a-Smart-Email-Support-System-with-CSharp-and-OpenAI)
