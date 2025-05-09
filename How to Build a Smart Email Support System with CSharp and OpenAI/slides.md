@@ -1,6 +1,6 @@
 ---
 # You can also start simply with 'default'
-theme: unicorn
+theme: default
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: https://cover.sli.dev
@@ -19,6 +19,7 @@ mdc: true
 # open graph
 # seoMeta:
 #  ogImage: https://cover.sli.dev
+highlighter: shiki
 ---
 
 # How to Build a Smart Email Support System
@@ -44,9 +45,13 @@ mdc: true
 Let’s build a smart system that can:
 
 ✅ Automatically read new support emails
+
 ✅ Understand what users are asking
+
 ✅ Pull answers from documentation
+
 ✅ Reply with a clear, helpful message
+
 ✅ All in real time, with serverless C#
 
 ---
@@ -147,3 +152,7 @@ await graphClient.Users[supportUser]
 From new email → to auto-reply 💬
 
 ---
+
+# Thank You!
+
+## git commit -m "💩"
