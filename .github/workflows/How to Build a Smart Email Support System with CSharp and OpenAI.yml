@@ -1,0 +1,14 @@
+name: Publish - How to Build a Smart Email Support System with CSharp and OpenAI
+
+on: 
+  workflow_dispatch:
+  push:
+    paths: 
+      - 'How to Build a Smart Email Support System with CSharp and OpenAI/**'
+
+jobs:
+  publish:
+    uses: ./.github/workflows/publish-presentation.yml
+    with:
+      talk_folder: 'How to Build a Smart Email Support System with CSharp and OpenAI'
+      out_folder: 'How-to-Build-a-Smart-Email-Support-System-with-CSharp-and-OpenAI'

@@ -187,7 +187,6 @@ When Do SLMs Outperform LLMs?
 ### <br><br>*"Sometimes, small is the smarter choice."* 🚀
 
 ---
-
 transition: slide-up
 layout: speaker-info
 
@@ -203,7 +202,6 @@ social3: emanueleb@outolook.com
 ---
 
 ---
-
 transition: slide-up
 layout: speaker-info
 
