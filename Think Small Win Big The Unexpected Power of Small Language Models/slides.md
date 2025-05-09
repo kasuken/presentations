@@ -4,7 +4,7 @@ title: "Think Small, Win Big: The Unexpected Power of Small Language Models"
 author: "Emanuele Bartolesi"
 transition: slide-left
 class: text-center
-theme: unicorn
+theme: slidev-theme-dotnet-junkie
 highlighter: shiki
 ---
 
