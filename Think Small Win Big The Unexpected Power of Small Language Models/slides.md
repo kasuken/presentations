@@ -12,7 +12,7 @@ highlighter: shiki
 ## The Unexpected Power of Small Language Models
 ## ---
 ### Emanuele Bartolesi | Senior Cloud Engineer @Xebia
-### Charlize Vogelsinger | Copilot and Engineer @Xebia
+### Charlize Vogelsinger | Senior Expert Transformation & Engineering @Xebia
 
 ---
 
@@ -23,7 +23,6 @@ highlighter: shiki
 - The **trade-offs** of large models:
   - High computational cost 💰
   - Slower inference ⚡
-  - Privacy concerns 🔒
 
 ---
 
@@ -40,13 +39,13 @@ highlighter: shiki
 ## The Most Common Small Language Models
 | **Model**          | **Size** | **Key Features** |
 |---------------|------|--------------|
+| **Phi-4-mini** | 3.8B | Microsoft’s small yet powerful model |
+| **Phi-4-mini-reasoning** | 3.8B | Balances efficiency with advanced reasoning |
 | **Mistral 7B** | 7B  | Open-weight, strong reasoning capabilities |
 | **Hermes Llama 3 3B/13B** | 3B/13B | Balances efficiency and accuracy |
-| **Phi-3** | 3.8B | Microsoft’s small yet powerful model |
 | **Gemma 2B/7B** | 2B/7B | Google’s efficient model series |
 | **Falcon 7B** | 7B  | Open-source, optimized for speed |
 | **DeepSeek R1 Distill** | 7B | Distilled from larger models, high accuracy |
-| **Smallthinker** | 3B | Reasoning for resource-constrained devices |
 
 ---
 
@@ -59,19 +58,12 @@ highlighter: shiki
 
 ---
 
-## When Do SLMs Outperform LLMs?
+## Benchmarks: Performance
+When Do SLMs Outperform LLMs?
 - **Edge computing & IoT** (limited resources)
 - **On-premise AI** (privacy/security concerns)
 - **Enterprise AI** (customized, fine-tuned models)
-- **Low-latency AI assistants**
-
----
-
-## Benchmarks: LLM vs. SLM Performance
-### Speed & Latency ⚡
-- **SLMs process responses 2-5x faster** than LLMs.
-- Lower parameter count = **less computational overhead**.
-- Ideal for **real-time applications**.
+- **Low-latency AI assistants** (real-time responses)
 
 ---
 
@@ -79,8 +71,6 @@ highlighter: shiki
 - **SLMs reduce API costs by 50-80%** compared to LLMs.
 - Cloud GPU consumption is **significantly lower**.
 - Fine-tuning **costs 3-10x less** than LLMs.
-
-#### <br><br>Example: A bank spends > CHF 40K per month on a "secure" chatbot (Azure OpenAI GPT-4o)
 
 ---
 
@@ -115,6 +105,12 @@ highlighter: shiki
 ✅ **Supports domain-specific applications** with tailored responses.  
 ✅ **Scalable and flexible** for various use cases.  
 ✅ **Cost-effective** by leveraging existing data sources.
+
+---
+
+# Demo
+- LM Studio
+- AnythingLLM
 
 ---
 
@@ -168,7 +164,7 @@ highlighter: shiki
 
 # Yes, but there are disadvantages too!
 - **Total Cost of Ownership**  
--- hardware (cloud/on prem)  
+-- hardware (cloud/on prem) 
 -- fine-tuning vs. compute or API calls  
 -- initial deployment and integration  
 -- ops and maintenance  
@@ -187,11 +183,9 @@ highlighter: shiki
 - **Privacy-First AI** for enterprises.
 - **SLMs enabling "AI democratization".**
 
----
-
-## Final Takeaways & Q&A 🎤
-- **SLMs = cost-effective, faster, and more private.**
-- **RAG enhances SLMs to compete with LLMs.**
-- **AI’s future isn’t just about size—it’s about efficiency.**
 
 ### <br><br>*"Sometimes, small is the smarter choice."* 🚀
+
+---
+
+CONTACTS SLIDE HERE
