@@ -37,15 +37,16 @@ highlighter: shiki
 ---
 
 ## The Most Common Small Language Models
-| **Model**          | **Size** | **Key Features** |
-|---------------|------|--------------|
-| **Phi-4-mini** | 3.8B | Microsoft’s small yet powerful model |
-| **Phi-4-mini-reasoning** | 3.8B | Balances efficiency with advanced reasoning |
+| **Model**                  | **Size**   | **Key Features**                                  |
+| ---------------------- | ------ | --------------------------------------------- |
+| **Phi-4-mini** | 3.8B | Microsoft’s small yet powerful model, advanced reasoning available |
+| **DeepSeek R1 Distill** | 7B | Distilled from larger models, high accuracy |
+| **II-Medical-8B** | 8B | specifically engineered to enhance AI-driven medical reasoning |
 | **Mistral 7B** | 7B  | Open-weight, strong reasoning capabilities |
 | **Hermes Llama 3 3B/13B** | 3B/13B | Balances efficiency and accuracy |
 | **Gemma 2B/7B** | 2B/7B | Google’s efficient model series |
 | **Falcon 7B** | 7B  | Open-source, optimized for speed |
-| **DeepSeek R1 Distill** | 7B | Distilled from larger models, high accuracy |
+
 
 ---
 
@@ -58,7 +59,7 @@ highlighter: shiki
 
 ---
 
-## Benchmarks: Performance
+## Benchmarks: Performance 🚀
 When Do SLMs Outperform LLMs?
 - **Edge computing & IoT** (limited resources)
 - **On-premise AI** (privacy/security concerns)
@@ -205,13 +206,13 @@ social3: emanueleb@outolook.com
 transition: slide-up
 layout: speaker-info
 
-headerMessage: Thanks for all the fish.
+headerMessage: Always be bold! And thanks for all the fish
 speakerName: Charlize Vogelsinger
 imageSrc: https://dev-to-uploads.s3.amazonaws.com/uploads/articles/sdc2bpiftpadibi4h51c.gif
 jobTitle: Senior Expert Transformation & Engineering
-info1: Microsoft MVP & GitHub Star ⭐
-info2: 
-social1: kasuken
-social2: emanuelebartolesi.com
-social3: emanueleb@outolook.com
+info1: Checkout my Github Gist 👇
+info2: https://gist.github.com/xyzcharlize/dc6b3e3b0ab6a1078cf7901ae1595ce5
+social1: xyzcharlize
+social2: xyzcharlize@proton.me
+social3: charlize.vogelsinger@xebia.com
 ---
