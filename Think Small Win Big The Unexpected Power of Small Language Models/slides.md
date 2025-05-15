@@ -78,15 +78,15 @@ themeConfig:
 ---
 
 # The Most Common Small Language Models
-| **Model**          | **Size** | **Key Features** |
-|---------------|------|--------------|
-| **Phi-4-mini** | 3.8B | Microsoft’s small yet powerful model |
-| **Phi-4-mini-reasoning** | 3.8B | Balances efficiency with advanced reasoning |
+| **Model**                  | **Size**   | **Key Features**                                  |
+| ---------------------- | ------ | --------------------------------------------- |
+| **Phi-4-mini** | 3.8B | Microsoft’s small yet powerful model, advanced reasoning available |
+| **DeepSeek R1 Distill** | 7B | Distilled from larger models, high accuracy |
+| **II-Medical-8B** | 8B | specifically engineered to enhance AI-driven medical reasoning |
 | **Mistral 7B** | 7B  | Open-weight, strong reasoning capabilities |
 | **Hermes Llama 3 3B/13B** | 3B/13B | Balances efficiency and accuracy |
 | **Gemma 2B/7B** | 2B/7B | Google’s efficient model series |
 | **Falcon 7B** | 7B  | Open-source, optimized for speed |
-| **DeepSeek R1 Distill** | 7B | Distilled from larger models, high accuracy |
 
 ---
 
@@ -228,6 +228,11 @@ When Do SLMs Outperform LLMs?
 ### <br><br>*"Sometimes, small is the smarter choice."* 🚀
 
 ---
+# Check out the Charlize's gist!
+
+- https://gist.github.com/xyzcharlize/dc6b3e3b0ab6a1078cf7901ae1595ce5
+
+---
 layout: about-me
 
 helloMsg: "git stash -m 💩"
@@ -239,4 +244,18 @@ line2: ""
 social1: "@kasuken"
 social2: emanuelebartolesi.com
 social3: emanueleb@outolook.com
+---
+
+---
+layout: about-me
+
+helloMsg: "Always be bold!"
+name: Charlize Vogelsinger
+imageSrc: https://avatars.githubusercontent.com/u/183305193?v=4
+job: Senior Expert Transformation & Engineering
+line1: ""
+line2: ""
+social1: "@xyzcharlize"
+social2: xyzcharlize@proton.me
+social3: charlize.vogelsinger@xebia.com
 ---
