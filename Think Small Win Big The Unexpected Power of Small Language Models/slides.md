@@ -228,23 +228,10 @@ When Do SLMs Outperform LLMs?
 ### <br><br>*"Sometimes, small is the smarter choice."* 🚀
 
 ---
+
 # Check out the Charlize's gist!
 
 - https://gist.github.com/xyzcharlize/dc6b3e3b0ab6a1078cf7901ae1595ce5
-
----
-layout: about-me
-
-helloMsg: "git stash -m 💩"
-name: Emanuele Bartolesi
-imageSrc: https://dev-to-uploads.s3.amazonaws.com/uploads/articles/sdc2bpiftpadibi4h51c.gif
-job: Senior Cloud Engineer
-line1: "Microsoft MVP & GitHub Star ⭐"
-line2: ""
-social1: "@kasuken"
-social2: emanuelebartolesi.com
-social3: emanueleb@outolook.com
----
 
 ---
 layout: about-me
@@ -258,4 +245,18 @@ line2: ""
 social1: "@xyzcharlize"
 social2: xyzcharlize@proton.me
 social3: charlize.vogelsinger@xebia.com
+---
+
+---
+layout: about-me
+
+helloMsg: "git stash -m 💩"
+name: Emanuele Bartolesi
+imageSrc: https://dev-to-uploads.s3.amazonaws.com/uploads/articles/sdc2bpiftpadibi4h51c.gif
+job: Senior Cloud Engineer
+line1: "Microsoft MVP & GitHub Star ⭐"
+line2: ""
+social1: "@kasuken"
+social2: emanuelebartolesi.com
+social3: emanueleb@outolook.com
 ---
