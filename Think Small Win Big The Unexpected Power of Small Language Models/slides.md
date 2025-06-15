@@ -12,7 +12,6 @@ highlighter: shiki
 ## The Unexpected Power of Small Language Models
 ## ---
 ### Emanuele Bartolesi | Senior Cloud Engineer @Xebia
-### Charlize Vogelsinger | Senior Expert Transformation & Engineering @Xebia
 
 ---
 
@@ -194,21 +193,6 @@ headerMessage: git commit -m "💩"
 speakerName: Emanuele Bartolesi
 imageSrc: https://dev-to-uploads.s3.amazonaws.com/uploads/articles/sdc2bpiftpadibi4h51c.gif
 jobTitle: Senior Cloud Engineer
-info1: Microsoft MVP & GitHub Star ⭐
-info2: 
-social1: kasuken
-social2: emanuelebartolesi.com
-social3: emanueleb@outolook.com
----
-
----
-transition: slide-up
-layout: speaker-info
-
-headerMessage: Thanks for all the fish.
-speakerName: Charlize Vogelsinger
-imageSrc: https://dev-to-uploads.s3.amazonaws.com/uploads/articles/sdc2bpiftpadibi4h51c.gif
-jobTitle: Senior Expert Transformation & Engineering
 info1: Microsoft MVP & GitHub Star ⭐
 info2: 
 social1: kasuken
