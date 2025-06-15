@@ -1,11 +1,52 @@
 ---
-background: https://plus.unsplash.com/premium_photo-1718306013082-eb1c58ff973a
+background: https://source.unsplash.com/collection/94734566/1920x1080
 title: "Think Small, Win Big: The Unexpected Power of Small Language Models"
 author: "Emanuele Bartolesi"
 transition: slide-left
 class: text-center
-theme: slidev-theme-dotnet-junkie
+theme: the-unnamed
 highlighter: shiki
+layout: cover
+
+themeConfig:
+  color: "#F3EFF5"
+  background: "#161C2C"
+
+  code-background: "#0F131E"
+  code-border: "#242d34"
+
+  accents-teal: "#44FFD2"
+  accents-yellow: "#FFE45E"
+  accents-red: "#FE4A49"
+  accents-lightblue: "#15C2CB"
+  accents-blue: "#5EADF2"
+  accents-vulcan: "#0E131F"
+
+  header-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+  default-headingBg: var(--slidev-theme-accents-yellow)
+  default-headingColor: var(--slidev-theme-accents-vulcan)
+  default-background: var(--slidev-theme-background)
+
+  center-headingBg: var(--slidev-theme-accents-blue)
+  center-headingColor: var(--slidev-theme-accents-vulcan)
+  center-background: var(--slidev-theme-background)
+
+  cover-headingBg: var(--slidev-theme-accents-teal)
+  cover-headingColor: var(--slidev-theme-accents-vulcan)
+  cover-background: var(--slidev-theme-background)
+
+  section-headingBg: var(--slidev-theme-accents-lightblue)
+  section-headingColor: var(--slidev-theme-accents-vulcan)
+  section-background: var(--slidev-theme-background)
+
+  aboutme-h1: 'font-size: 2.5rem'
+
+  aboutme-background: var(--slidev-theme-color)
+  aboutme-color: var(--slidev-theme-background)
+  aboutme-helloBg: var(--slidev-theme-accents-yellow)
+  aboutme-helloColor: var(--slidev-theme-background)
+  aboutme-nameColor: var(--slidev-theme-accents-red)
 ---
 
 # Think Small, Win Big
@@ -15,7 +56,7 @@ highlighter: shiki
 
 ---
 
-## Bigger ≠ Always Better
+# Bigger ≠ Always Better
 - AI race has focused on **ever-growing LLMs**.
 - More **parameters = better**? Not always!
   - The newest Llama 4 has 2T parameters
@@ -25,7 +66,7 @@ highlighter: shiki
 
 ---
 
-## The Rise of Small Language Models (SLMs)
+# The Rise of Small Language Models (SLMs)
 - **What is an SLM?**
   - Trained on **fewer parameters** but still effective.
   - More **efficient, faster, and cheaper**.
@@ -35,20 +76,20 @@ highlighter: shiki
 
 ---
 
-## The Most Common Small Language Models
-| **Model**          | **Size** | **Key Features** |
-|---------------|------|--------------|
-| **Phi-4-mini** | 3.8B | Microsoft’s small yet powerful model |
-| **Phi-4-mini-reasoning** | 3.8B | Balances efficiency with advanced reasoning |
+# The Most Common Small Language Models
+| **Model**                  | **Size**   | **Key Features**                                  |
+| ---------------------- | ------ | --------------------------------------------- |
+| **Phi-4-mini** | 3.8B | Microsoft’s small yet powerful model, advanced reasoning available |
+| **DeepSeek R1 Distill** | 7B | Distilled from larger models, high accuracy |
+| **II-Medical-8B** | 8B | specifically engineered to enhance AI-driven medical reasoning |
 | **Mistral 7B** | 7B  | Open-weight, strong reasoning capabilities |
 | **Hermes Llama 3 3B/13B** | 3B/13B | Balances efficiency and accuracy |
 | **Gemma 2B/7B** | 2B/7B | Google’s efficient model series |
 | **Falcon 7B** | 7B  | Open-source, optimized for speed |
-| **DeepSeek R1 Distill** | 7B | Distilled from larger models, high accuracy |
 
 ---
 
-## Why Choose an SLM?
+# Why Choose an SLM?
 ✅ **Lower inference cost** 💰  
 ✅ **Faster responses** ⚡  
 ✅ **Easier fine-tuning & deployment** 🛠️  
@@ -57,7 +98,7 @@ highlighter: shiki
 
 ---
 
-## Benchmarks: Performance
+# Benchmarks: Performance
 When Do SLMs Outperform LLMs?
 - **Edge computing & IoT** (limited resources)
 - **On-premise AI** (privacy/security concerns)
@@ -66,28 +107,28 @@ When Do SLMs Outperform LLMs?
 
 ---
 
-## Benchmarks: Cost Efficiency 💰
+# Benchmarks: Cost Efficiency 💰
 - **SLMs reduce API costs by 50-80%** compared to LLMs.
 - Cloud GPU consumption is **significantly lower**.
 - Fine-tuning **costs 3-10x less** than LLMs.
 
 ---
 
-## Benchmarks: Accuracy & Fine-Tuning 🎯
+# Benchmarks: Accuracy & Fine-Tuning 🎯
 - **SLMs match or exceed LLMs** in domain-specific tasks.
 - Work better with **structured prompts**.
 - **Trade-off:** LLMs still excel in **zero-shot generalization**.
 
 ---
 
-## Supercharging SLMs with RAG 🏎
+# Supercharging SLMs with RAG 🏎
 - **Retrieval-Augmented Generation (RAG) boosts context awareness.**
 - Allows an **SLM to function like an LLM**.
 - Uses **external knowledge sources dynamically**.
 
 ---
 
-## But what exactly is Retrieval-Augmented Generation (RAG)? 🤔
+# But what exactly is Retrieval-Augmented Generation (RAG)? 🤔
 - **RAG combines retrieval and generation** to enhance AI capabilities.
 - **Retrieval:** Fetches relevant information from external knowledge sources.
 - **Augmentation:** Provides the AI model with context-rich data at runtime.
@@ -95,7 +136,7 @@ When Do SLMs Outperform LLMs?
 
 ---
 
-## Key Benefits of RAG
+# Key Benefits of RAG
 ✅ **Improves accuracy** by grounding responses in real data.  
 ✅ **Reduces hallucinations** by relying on external sources.  
 ✅ **Dynamic adaptability** to new information without retraining.  
@@ -176,7 +217,7 @@ When Do SLMs Outperform LLMs?
 
 ---
 
-## The Future of SLMs 🔮
+# The Future of SLMs 🔮
 - **Hybrid models:** LLMs + SLMs working together.
 - **More open-source alternatives** gaining traction.
 - **Privacy-First AI** for enterprises.
@@ -186,16 +227,15 @@ When Do SLMs Outperform LLMs?
 ### <br><br>*"Sometimes, small is the smarter choice."* 🚀
 
 ---
-transition: slide-up
-layout: speaker-info
+layout: about-me
 
-headerMessage: git commit -m "💩"
-speakerName: Emanuele Bartolesi
+helloMsg: "git stash -m 💩"
+name: Emanuele Bartolesi
 imageSrc: https://dev-to-uploads.s3.amazonaws.com/uploads/articles/sdc2bpiftpadibi4h51c.gif
-jobTitle: Senior Cloud Engineer
-info1: Microsoft MVP & GitHub Star ⭐
-info2: 
-social1: kasuken
+job: Senior Cloud Engineer
+line1: "Microsoft MVP & GitHub Star ⭐"
+line2: ""
+social1: "@kasuken"
 social2: emanuelebartolesi.com
 social3: emanueleb@outolook.com
 ---

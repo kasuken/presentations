@@ -1,6 +1,6 @@
 ---
 # You can also start simply with 'default'
-theme: unicorn
+theme: default
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: https://cover.sli.dev
@@ -19,6 +19,7 @@ mdc: true
 # open graph
 # seoMeta:
 #  ogImage: https://cover.sli.dev
+highlighter: shiki
 ---
 
 # How to Build a Smart Email Support System
@@ -44,9 +45,13 @@ mdc: true
 Let’s build a smart system that can:
 
 ✅ Automatically read new support emails
+
 ✅ Understand what users are asking
+
 ✅ Pull answers from documentation
+
 ✅ Reply with a clear, helpful message
+
 ✅ All in real time, with serverless C#
 
 ---
@@ -69,70 +74,6 @@ Let’s build a smart system that can:
 
 ---
 
-# Step 1: Trigger on New Emails
-
-```csharp
-public static async Task Run(
-   [TimerTrigger("*/5 * * * * *")] TimerInfo myTimer,
-   ILogger log)
-{
-   var emails = await GetUnreadEmails();
-   foreach (var email in emails)
-   {
-      await ProcessEmail(email);
-   }
-}
-```
-
-* Use **Graph API** to fetch unread emails
-* Trigger Function on timer or webhook
-
----
-
-# Step 2: Extract Content & Metadata
-
-* Use Graph API to get:
-
-  * 📩 Email body
-  * 👤 Sender info
-  * 🗖️ Date & subject
-
-```csharp
-var message = await graphClient.Me.Messages[id]
-   .Request()
-   .GetAsync();
-```
-
----
-
-# Step 3: Understand the Question
-
-* Send message content to OpenAI (Azure OpenAI or OpenAI.com)
-* Add system prompt: “Act as a support agent for our product X”
-* Optional: Prepend docs from local knowledge base (RAG)
-
-```csharp
-var prompt = $"Customer asked: {emailBody}\n---\n{docs}";
-var response = await openAi.ChatAsync(prompt);
-```
-
----
-
-# Step 4: Generate the Reply
-
-* Use OpenAI to create a **friendly, helpful answer**
-* Always include a disclaimer and references if needed
-* Store or send via Graph API:
-
-```csharp
-await graphClient.Users[supportUser]
-   .SendMail(message, saveToSentItems: true)
-   .Request()
-   .PostAsync();
-```
-
----
-
 # Optional: Bring Your Docs
 
 * Store internal docs as markdown or plain text
@@ -147,3 +88,7 @@ await graphClient.Users[supportUser]
 From new email → to auto-reply 💬
 
 ---
+
+# Thank You!
+
+## git commit -m "💩"
