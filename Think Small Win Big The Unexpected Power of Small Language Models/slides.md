@@ -142,7 +142,7 @@ themeConfig:
 flowchart LR
     A[User Prompt] --> B[Tokenizer]
     B --> C[Token IDs]
-    C --> D[Transformer Blocks (SLM)]
+    C --> D[Transformer Blocks SLM]
     D --> E[Next Token Prediction]
     E --> F[Decoder]
     F --> G[Updated Prompt with New Token]
