@@ -89,6 +89,74 @@ themeConfig:
 
 ---
 
+# How Does an SLM Work? 🧠
+
+- At its core, an SLM is a **smaller transformer model** trained on large text datasets.
+- It **learns to predict the next word** based on context — just like LLMs.
+- The key difference? ✂️ **Fewer layers and parameters** → faster inference, lower memory use.
+- Often trained on **domain-specific or high-quality curated data**.
+
+---
+
+# Under the Hood: Anatomy of an SLM 🔍
+
+- **Tokenizer**: Converts input text into numerical tokens  
+- **Embedding Layer**: Transforms tokens into vector representations  
+- **Transformer Blocks**: Attention mechanisms process context  
+- **Output Layer**: Predicts next tokens or generates responses  
+
+⚡ Fewer transformer blocks = **faster and lighter** execution.
+
+---
+
+# Training & Optimization Strategies 🎯
+
+- **Distillation**: Compresses knowledge from a large model into a smaller one  
+- **Quantization**: Uses lower-precision math (e.g., int4/int8) to reduce memory  
+- **Fine-tuning**: Customizes the SLM on specific tasks or data  
+- **RAG Integration**: Compensates for smaller model size with external knowledge retrieval
+
+📦 Result: A model that’s efficient, targeted, and surprisingly capable.
+
+---
+
+# How Inference Works in an SLM ⚙️
+
+- Inference = **“predict the next token”**, one step at a time.
+- Each prediction depends on:
+  - The **input prompt** (tokens already generated)
+  - The model’s **internal state** (attention context)
+- The output is a **token**, decoded back into a word or part of a word.
+- Repeats until:
+  - A stop token is reached 🛑
+  - Max length is hit  
+  - Or your app says “that’s enough”
+
+🔁 This is why **token limits** matter — and why **latency scales with input length**.
+
+---
+
+# Inference Flow: Token by Token 🧠➕️📝
+
+```mermaid
+flowchart LR
+    A[User Prompt] --> B[Tokenizer]
+    B --> C[Token IDs]
+    C --> D[Transformer Blocks (SLM)]
+    D --> E[Next Token Prediction]
+    E --> F[Decoder]
+    F --> G[Updated Prompt with New Token]
+    G --> H{Stop?}
+    H -- No --> C
+    H -- Yes --> I[Final Response]
+```
+
+* The model **loops** through this process for each new token.
+* Output builds word by word, in real time.
+* Faster with **smaller models** due to fewer transformer blocks.
+
+---
+
 # Why Choose an SLM?
 ✅ **Lower inference cost** 💰  
 ✅ **Faster responses** ⚡  
