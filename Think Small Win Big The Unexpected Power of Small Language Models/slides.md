@@ -139,7 +139,7 @@ themeConfig:
 # Inference Flow: Token by Token 🧠➕️📝
 
 ```mermaid
-flowchart TD
+flowchart LR
     A[User Prompt] --> B[Tokenizer]
     B --> C[Token IDs]
     C --> D[Transformer Blocks SLM]
