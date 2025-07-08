@@ -1,33 +1,55 @@
 ---
-# try also 'default' to start simple
-theme: slidev-theme-dotnet-junkie
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
 background: https://source.unsplash.com/collection/94734566/1920x1080
-# apply any windi css classes to the current slide
-class: 'text-center'
-# https://sli.dev/custom/highlighters.html
-highlighter: shiki
-# show line numbers in code blocks
-lineNumbers: false
-# some information about the slides, markdown enabled
-info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
-# persist drawings in exports and build
-drawings:
-  persist: false
-# page transition
+title: "Public Speaking is not only for Events"
+author: "Emanuele Bartolesi"
 transition: slide-left
-# use UnoCSS
-css: unocss
+class: text-center
+theme: the-unnamed
+highlighter: shiki
+layout: cover
+
+themeConfig:
+  color: "#F3EFF5"
+  background: "#161C2C"
+
+  code-background: "#0F131E"
+  code-border: "#242d34"
+
+  accents-teal: "#44FFD2"
+  accents-yellow: "#FFE45E"
+  accents-red: "#FE4A49"
+  accents-lightblue: "#15C2CB"
+  accents-blue: "#5EADF2"
+  accents-vulcan: "#0E131F"
+
+  header-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+  default-headingBg: var(--slidev-theme-accents-yellow)
+  default-headingColor: var(--slidev-theme-accents-vulcan)
+  default-background: var(--slidev-theme-background)
+
+  center-headingBg: var(--slidev-theme-accents-blue)
+  center-headingColor: var(--slidev-theme-accents-vulcan)
+  center-background: var(--slidev-theme-background)
+
+  cover-headingBg: var(--slidev-theme-accents-teal)
+  cover-headingColor: var(--slidev-theme-accents-vulcan)
+  cover-background: var(--slidev-theme-background)
+
+  section-headingBg: var(--slidev-theme-accents-lightblue)
+  section-headingColor: var(--slidev-theme-accents-vulcan)
+  section-background: var(--slidev-theme-background)
+
+  aboutme-h1: 'font-size: 2.5rem'
+
+  aboutme-background: var(--slidev-theme-color)
+  aboutme-color: var(--slidev-theme-background)
+  aboutme-helloBg: var(--slidev-theme-accents-yellow)
+  aboutme-helloColor: var(--slidev-theme-background)
+  aboutme-nameColor: var(--slidev-theme-accents-red)
 ---
 
 # Public Speaking is not only for Events
-
-Microsoft MVP & GitHub Star ⭐
 
 Emanuele Bartolesi
 
@@ -37,8 +59,6 @@ Emanuele Bartolesi
   </span>
 </div>
 
----
-transition: slide-left
 ---
 
 # Preparation?
@@ -50,8 +70,6 @@ transition: slide-left
 
 
 ---
-transition: slide-left
----
 
 # Structure and deliver
 
@@ -62,8 +80,6 @@ transition: slide-left
 - 🎭 Be yourself, be natural, and be confident
 
 ---
-transition: slide-left
----
 
 # Handle questions and feedback
 
@@ -72,15 +88,11 @@ transition: slide-left
 - 📝 End on a positive note and restate your main message and goal
 
 ---
-transition: slide-left
----
 
 # Takeaway 1
 
 Public speaking is a skill that can benefit you in many aspects of your life, but it can also be challenging and intimidating for many people.
 
----
-transition: slide-left
 ---
 
 # Takeaway 2
@@ -88,15 +100,11 @@ transition: slide-left
 To overcome these challenges and become a better public speaker, you need to follow three main steps: prepare, structure and deliver, and handle questions and feedback.
 
 ---
-transition: slide-left
----
 
 # Takeaway 3
 
 To prepare for a presentation, you need to know your purpose and audience, research and organize your content, practice and rehearse your presentation, and review and revise your presentation.
 
----
-transition: slide-left
 ---
 
 # Takeaway 4
@@ -104,53 +112,21 @@ transition: slide-left
 To structure and deliver your content, you need to start with a strong introduction, develop your main points in the body, and end with a memorable conclusion. You also need to use various techniques to capture and maintain the attention of your audience, convey your message clearly and persuasively, and create a lasting impression.
 
 ---
-transition: slide-left
----
 
 # Takeaway 5
 
 To handle questions and feedback, you need to invite, acknowledge, listen, respond, and thank your audience. You also need to avoid ignoring, dismissing, rambling, or getting defensive with your audience. You also need to end on a positive note and restate your main message and goal.
 
 ---
-layout: image-left
+layout: about-me
 
-# the image source
-image: https://cdn.syncfusion.com/content/images/downloads/ebook/ebook-cover/public-speaking-for-geeks-succinctly.png
-
-# a custom class name to the content
-class: my-cool-content-on-the-right
----
-
-Public Speaking for Geeks
-
-https://www.syncfusion.com/succinctly-free-ebooks/public-speaking-for-geeks-succinctly
-
-
----
-layout: image-right
-
-# the image source
-image: https://cdn.syncfusion.com/content/images/downloads/ebook/ebook-cover/Beyond-Public-Speaking-For-Geeks-Succinctly.png
-
-# a custom class name to the content
-class: my-cool-content-on-the-right
----
-
-Beyond Public Speaking for Geeks
-
-https://www.syncfusion.com/succinctly-free-ebooks/beyond-public-speaking-for-geeks-succinctly
-
----
-transition: slide-up
-layout: speaker-info
-
-headerMessage: Thanks for all the fish.
-speakerName: Emanuele Bartolesi
-imageSrc: https://bit.ly/3V4bBPA
-jobTitle: Microsoft 365 Architect
-info1: Microsoft MVP & GitHub Star ⭐
-info2: 
-social1: kasuken
+helloMsg: "git stash -m 💩"
+name: Emanuele Bartolesi
+imageSrc: https://dev-to-uploads.s3.amazonaws.com/uploads/articles/sdc2bpiftpadibi4h51c.gif
+job: Senior Cloud Engineer
+line1: "Xebia"
+line2: ""
+social1: "@kasuken"
 social2: emanuelebartolesi.com
 social3: emanueleb@outolook.com
 ---

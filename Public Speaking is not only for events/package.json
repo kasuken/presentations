@@ -1,5 +1,6 @@
 {
   "name": "public-speaking-is-not-only-for-events",
+  "type": "module",
   "private": true,
   "scripts": {
     "build": "slidev build",
@@ -7,10 +8,12 @@
     "export": "slidev export"
   },
   "dependencies": {
-    "@slidev/cli": "^0.40.16",
-    "@slidev/theme-default": "*",
-    "@slidev/theme-seriph": "*",
-    "slidev-theme-dotnet-junkie": "0.0.20",
-    "slidev-theme-dracula": "^0.1.0"
+    "@slidev/cli": "^51.4.0",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "prettier": "^3.5.3",
+    "slidev-theme-dotnet-junkie": "^0.0.30",
+    "slidev-theme-the-unnamed": "^0.0.22",
+    "vue": "^3.5.13"
   }
 }
