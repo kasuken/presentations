@@ -10,5 +10,5 @@ jobs:
   publish:
     uses: ./.github/workflows/publish-presentation.yml
     with:
-      talk_folder: 'More Human Than Human - Bringing Digital Humans to Life with Azure AI'
+      talk_folder: 'More Human Than Human Bringing Digital Humans to Life with Azure AI'
       out_folder: 'More-Human-Than-Human-Bringing-Digital-Humans-to-Life-with-Azure-AI'
