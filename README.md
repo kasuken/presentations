@@ -12,3 +12,4 @@ My presentations material for community events and conferences
 - [The Secret to Living a Better Life with a Second Brain](https://kasuken.github.io/presentations/The-Secret-to-Living-a-Better-Life-with-a-Second-Brain/)
 - [Think Small, Win Big - The Unexpected Power of Small Language Models](https://kasuken.github.io/presentations/Think-Small-Win-Big-The-Unexpected-Power-of-Small-Language-Models/)
 - [How to Build a Smart Email Support System with CSharp and OpenAI](https://kasuken.github.io/presentations/How-to-Build-a-Smart-Email-Support-System-with-CSharp-and-OpenAI)
+- [More Human Than Human - Bringing Digital Humans to Life with Azure AI](https://kasuken.github.io/presentations/More-Human-Than-Human-Bringing-Digital-Humans-to-Life-with-Azure-AI/)

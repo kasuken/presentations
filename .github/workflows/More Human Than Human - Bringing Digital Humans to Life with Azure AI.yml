@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     paths: 
-      - 'More Human Than Human - Bringing Digital Humans to Life with Azure AI/**'
+      - 'More Human Than Human Bringing Digital Humans to Life with Azure AI/**'
 
 jobs:
   publish:
