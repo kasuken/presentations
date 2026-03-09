@@ -1,0 +1,14 @@
+name: Publish - Goodbye Vibe Coding - Hello Spec Driven Development
+
+on: 
+  workflow_dispatch:
+  push:
+    paths: 
+      - 'Goodbye Vibe Coding - Hello Spec Driven Development/**'
+
+jobs:
+  publish:
+    uses: ./.github/workflows/publish-presentation.yml
+    with:
+      talk_folder: 'Goodbye Vibe Coding - Hello Spec Driven Development'
+      out_folder: 'Goodbye-Vibe-Coding-Hello-Spec-Driven-Development'

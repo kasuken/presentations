@@ -301,7 +301,7 @@ helloMsg: "git stash -m 💩"
 name: Emanuele Bartolesi
 imageSrc: https://dev-to-uploads.s3.amazonaws.com/uploads/articles/sdc2bpiftpadibi4h51c.gif
 job: Senior Cloud Engineer
-line1: "Microsoft MVP & GitHub Star ⭐"
+line1: "Microsoft MVP (12x) & GitHub Star ⭐ (4x)"
 line2: ""
 social1: "@kasuken"
 social2: emanuelebartolesi.com
