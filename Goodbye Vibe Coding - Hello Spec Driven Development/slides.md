@@ -8,7 +8,7 @@ comark: true
 duration: 50min
 ---
 
-# Goodbye Vibe Coding, Hello Spec Driven Development
+# Goodbye Vibe Coding, <br /> Hello Spec Driven Development
 
 Emanuele Bartolesi
 
@@ -133,6 +133,125 @@ layout: two-cols
 6. Break into tasks with `/speckit.tasks` — granular actionable items
 7. Execute with `/speckit.implement` — AI drafts code/tests/docs for each task
 8. You review, test, merge, and integrate like normal
+
+---
+layout: section
+---
+
+# Demo: Spec Kit in Action
+
+---
+
+# Step 1: Installation & Project Setup
+
+- **GitHub repo**: [github.com/github/spec-kit](https://github.com/github/spec-kit)
+- Install with `uvx` or download the template from **Releases** on GitHub
+- After init, your project gets two key folders:
+  - **`.github/`** — contains a set of prompts used by Spec Kit
+  - **`.specify/`** — contains the important files for Spec Kit (specs, plans, tasks)
+- Everything is file-based and version-controllable
+
+---
+
+# Step 2: The Constitution File
+
+- The **constitution** defines your **non-negotiable principles** for the project
+- Examples: _"always write tests"_, _"use HTTP calls for APIs instead of SDKs"_, _"follow accessibility standards"_
+- Use Agent Mode to fill it from a prompt:
+
+> "Fill the constitution file with the bare minimum requirements for a static web app based on the template."
+
+- Run the command:
+
+```
+/speckit.constitution
+```
+
+- Review and adjust — this becomes the guardrail for all AI-generated code
+
+---
+
+# Step 3: Write the Spec
+
+- Use `/speckit.specify` to declare **what** you want and **why** — not the technical how
+- Example prompt:
+
+> "I am building a modern podcast website. Should have a landing page with a featured episode, an Episodes page, an About page and a FAQ page. All the data is mocked."
+
+```
+/speckit.specify
+```
+
+- No technologies are described here — just the **feature requirements**
+- For things that need clarification: _"use the best guess you think is reasonable. Update acceptance checklist after."_
+
+---
+
+# Step 4: Create the Plan
+
+- Use `/speckit.plan` to define the **how** — tech stack, architecture, dependencies
+- Now you bring in the technical choices:
+
+> "I am gonna use Blazor Server (.NET 10) and MudBlazor for the UI, mock data everywhere. App is responsive and ready for mobile."
+
+```
+/speckit.plan
+```
+
+- The plan converts your spec into architecture decisions, module breakdown, and dependency choices
+- Review and edit before moving to tasks
+
+---
+
+# Step 5: Break Down into Tasks
+
+- Use `/speckit.tasks` to create **granular, actionable work items**
+
+```
+/speckit.tasks
+```
+
+> "Break this down into tasks"
+
+- Each task links back to the spec and plan
+- Tasks include: component creation, data mocking, page layouts, tests, docs
+
+---
+
+# Step 6: Implement
+
+- **Start a new chat session** for implementation
+- Select a strong coding model (e.g., **Claude Sonnet 4.6**)
+
+```
+/speckit.implement
+```
+
+- The AI drafts code, tests, and docs for each task — within the context of your spec + plan + tasks
+- You still **review, test, merge, and integrate** like normal
+
+---
+layout: two-cols
+---
+
+# Spec Kit for Existing Projects
+
+**Quick Summary**
+
+- Run `/speckit.constitution` for existing projects too — establish your guardrails
+- Run `/speckit.analyse` after creating a spec — validates against your constitution
+- Tell the AI to **update the spec** after iterating on it
+
+::right::
+
+<br/>
+
+**Brownfield Considerations**
+
+- For complex existing projects, a single constitution may not capture enough context
+- Without existing `/specification` files, future specs may lack important constraints
+- `/analyse` compares against the constitution — if the constitution isn't context-aware enough, the analysis may miss gaps
+- **Start with the constitution, iterate, and enrich it over time**
 
 ---
 layout: two-cols
