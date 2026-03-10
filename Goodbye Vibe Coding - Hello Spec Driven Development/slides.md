@@ -43,24 +43,13 @@ layout: section
 - Karpathy himself noted: *"this is not really coding"*
 
 ---
-layout: two-cols
----
 
 # Vibe Coding Limitations
-
-**Problems:**
 
 - AI doesn't always respect instructions
 - Replit Agent deleted a live production database despite code-freeze instructions
 - Code quality, readability & maintenance suffer
 - 29.5% of Python snippets had security issues (study)
-
-::right::
-
-<br/><br/>
-
-**More Problems:**
-
 - Missing parameter validation / injection risks
 - Skips planning, architecture, risk-analysis
 - Difficult to debug when things break
@@ -71,11 +60,15 @@ layout: two-cols
 # From Vibe Coding to AI Native Engineering
 
 - What if instead of abandoning AI, we use it as a **real engineering tool**?
-- Key principles of AI Native Engineering:
-  - **Context-rich input** instead of simple prompts (architecture, coding standards, dependencies)
-  - **Human-in-the-loop (HITL)** — humans remain accountable, AI is a collaborator
-  - **Divide & conquer** — break systems into modules, assign AI-assisted tasks per scope
 - Think of AI as "the friendly intern who can whip up drafts, but you're still the senior engineer"
+
+---
+
+# AI Native Engineering Principles
+
+- **Context-rich input** instead of simple prompts (architecture, coding standards, dependencies)
+- **Human-in-the-loop (HITL)** — humans remain accountable, AI is a collaborator
+- **Divide & conquer** — break systems into modules, assign AI-assisted tasks per scope
 
 ---
 layout: section
@@ -90,6 +83,11 @@ layout: section
 - Flip the "code first, document later" approach
 - The **specification** becomes the driving artifact
 - Treat the spec (what + why + constraints) as the **source of truth**
+
+---
+
+# SDD: How It Works
+
 - Give AI the spec + context → AI generates code, tests, tasks
 - Humans validate, evolve the spec, steer the AI
 - **No full autonomous control** — review everything
@@ -113,21 +111,17 @@ layout: section
 - Scaffolds **specs → plans → tasks** instead of diving straight into code
 
 ---
-layout: two-cols
----
 
-# Spec Kit Workflow
-
-**Setup & Define**
+# Spec Kit Workflow: Setup & Define
 
 1. Install `specify-cli` into your environment
 2. Run `specify init <PROJECT_NAME>` and pick your coding agent
 3. Define your "constitution" with `/speckit.constitution` — non-negotiable project rules
 4. Write the spec with `/speckit.specify` — declare what & why (not how)
 
-::right::
+---
 
-**Plan & Execute**
+# Spec Kit Workflow: Plan & Execute
 
 5. Generate implementation plan with `/speckit.plan` — tech stack, architecture, dependencies
 6. Break into tasks with `/speckit.tasks` — granular actionable items
@@ -231,22 +225,16 @@ layout: section
 - You still **review, test, merge, and integrate** like normal
 
 ---
-layout: two-cols
----
 
 # Spec Kit for Existing Projects
-
-**Quick Summary**
 
 - Run `/speckit.constitution` for existing projects too — establish your guardrails
 - Run `/speckit.analyse` after creating a spec — validates against your constitution
 - Tell the AI to **update the spec** after iterating on it
 
-::right::
+---
 
-<br/>
-
-**Brownfield Considerations**
+# Brownfield Considerations
 
 - For complex existing projects, a single constitution may not capture enough context
 - Without existing `/specification` files, future specs may lack important constraints
@@ -254,12 +242,8 @@ layout: two-cols
 - **Start with the constitution, iterate, and enrich it over time**
 
 ---
-layout: two-cols
----
 
-# Other SDD Tools
-
-**Kiro (AWS)**
+# Other SDD Tools: Kiro (AWS)
 
 - An "Agentic AI" IDE from AWS
 - Write a goal → Kiro helps plan, design, and build
@@ -268,9 +252,9 @@ layout: two-cols
 - Agent hooks for automation + Steering files for conventions
 - Great visual UI/UX, easy learning curve
 
-::right::
+---
 
-**BMAD Method**
+# Other SDD Tools: BMAD Method
 
 - Full end-to-end open-source SDD workflow
 - Distinct AI agents: Analyst, PM, Architect, Developer, Scrum Master
@@ -295,24 +279,17 @@ layout: section
 # Current Limitations of SDD
 
 ---
-layout: two-cols
----
 
-# Key SDD Challenges
-
-**Scaling & Team Issues**
+# SDD Challenges: Scaling & Teams
 
 - Spec overhead doesn't scale for small tasks — no "lightweight spec" path yet
 - Most tools are oriented toward individual devs, not full team workflows
 - Who owns the spec? How do multiple members collaborate?
 - Integration with sprints, agile, CI/CD still immature
 
-::right::
+---
 
-<br>
-<br>
-
-**Technical & Cultural**
+# SDD Challenges: Technical & Cultural
 
 - Legacy/brownfield systems are harder — SDD works best for greenfield
 - Reproducibility issues: same spec → different code from different agents
@@ -330,6 +307,14 @@ layout: two-cols
 - **Spec Kit** brings lightweight, tool-agnostic SDD to your existing workflow
 - The methodology is emerging — expect rapid improvements
 - Start small: try SDD on your next feature, iterate from there
+
+---
+layout: quote
+---
+
+# "Move fast and break things" was the old motto. "Specify first, build right" is the new one.
+
+Stop vibing. Start specifying.
 
 ---
 layout: about-me
