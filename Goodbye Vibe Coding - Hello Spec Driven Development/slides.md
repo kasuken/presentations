@@ -43,6 +43,12 @@ layout: section
 - Karpathy himself noted: *"this is not really coding"*
 
 ---
+layout: section
+---
+
+# Demo: Vibe Coding in Action
+
+---
 
 # Vibe Coding Limitations
 
@@ -69,6 +75,12 @@ layout: section
 - **Context-rich input** instead of simple prompts (architecture, coding standards, dependencies)
 - **Human-in-the-loop (HITL)** — humans remain accountable, AI is a collaborator
 - **Divide & conquer** — break systems into modules, assign AI-assisted tasks per scope
+
+---
+layout: section
+---
+
+# Demo: AI Native Engineering Workflow
 
 ---
 layout: section
@@ -330,3 +342,16 @@ social2: emanuelebartolesi.com
 social3: emanueleb@outolook.com
 
 ---
+
+---
+layout: center
+class: text-center
+---
+
+<div class="w-full flex items-center justify-center">
+  <img
+    src="./feedback/goodbye-vibe-coding-hello-spec-driven-development_bartolesi_1053444_feedback-code.png"
+    alt="Feedback code"
+    class="max-w-full max-h-[80vh] object-contain"
+  />
+</div>
