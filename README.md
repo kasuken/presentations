@@ -13,3 +13,4 @@ My presentations material for community events and conferences
 - [Think Small, Win Big - The Unexpected Power of Small Language Models](https://kasuken.github.io/presentations/Think-Small-Win-Big-The-Unexpected-Power-of-Small-Language-Models/)
 - [How to Build a Smart Email Support System with CSharp and OpenAI](https://kasuken.github.io/presentations/How-to-Build-a-Smart-Email-Support-System-with-CSharp-and-OpenAI)
 - [More Human Than Human - Bringing Digital Humans to Life with Azure AI](https://kasuken.github.io/presentations/More-Human-Than-Human-Bringing-Digital-Humans-to-Life-with-Azure-AI/)
+- [Goodbye Vibe Coding, Hello Spec Driven Delopment](https://kasuken.github.io/presentations/Goodbye-Vibe-Coding-Hello-Spec-Driven-Development/)
