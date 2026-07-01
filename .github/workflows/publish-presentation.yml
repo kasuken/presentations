@@ -33,7 +33,7 @@ jobs:
           node-version: 'lts/*'
 
       - name: Setup pnpm
-        if: hashFiles('pnpm-lock.yaml') != ''
+        if: hashFiles(format('{0}/pnpm-lock.yaml', inputs.talk_folder)) != ''
         uses: pnpm/action-setup@v4
         with:
           run_install: false
