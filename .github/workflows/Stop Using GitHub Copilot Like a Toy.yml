@@ -1,0 +1,14 @@
+name: Publish - Stop Using GitHub Copilot Like a Toy
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'Stop Using GitHub Copilot Like a Toy/**'
+
+jobs:
+  publish:
+    uses: ./.github/workflows/publish-presentation.yml
+    with:
+      talk_folder: 'Stop Using GitHub Copilot Like a Toy'
+      out_folder: 'Stop-Using-GitHub-Copilot-Like-a-Toy'

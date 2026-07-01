@@ -1,0 +1,14 @@
+name: Publish - From Zero to Confident Contributor in Just 2 Hours
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'From Zero to Confident Contributor in Just 2 Hours/**'
+
+jobs:
+  publish:
+    uses: ./.github/workflows/publish-presentation.yml
+    with:
+      talk_folder: 'From Zero to Confident Contributor in Just 2 Hours'
+      out_folder: 'From-Zero-to-Confident-Contributor-in-Just-2-Hours'

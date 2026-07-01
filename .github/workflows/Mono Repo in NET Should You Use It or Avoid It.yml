@@ -1,0 +1,14 @@
+name: Publish - Mono Repo in NET Should You Use It or Avoid It
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'Mono Repo in NET Should You Use It or Avoid It/**'
+
+jobs:
+  publish:
+    uses: ./.github/workflows/publish-presentation.yml
+    with:
+      talk_folder: 'Mono Repo in NET Should You Use It or Avoid It'
+      out_folder: 'Mono-Repo-in-NET-Should-You-Use-It-or-Avoid-It'
