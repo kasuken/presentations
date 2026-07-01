@@ -13,5 +13,5 @@ jobs:
   publish:
     uses: ./.github/workflows/publish-presentation.yml
     with:
-      talk_folder: 'GIT Up and Go'
-      out_folder: 'git-up-and-go'
+      talk_folder: 'How to Use Auth0 and .NET 8 to log in from any device, even your toaster'
+      out_folder: 'How-to-Use-Auth0-and-NET-8-to-log-in-from-any-device'

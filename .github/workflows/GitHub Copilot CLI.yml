@@ -1,0 +1,14 @@
+name: Publish - GitHub Copilot CLI
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'GitHub Copilot CLI/**'
+
+jobs:
+  publish:
+    uses: ./.github/workflows/publish-presentation.yml
+    with:
+      talk_folder: 'GitHub Copilot CLI'
+      out_folder: 'GitHub-Copilot-CLI'

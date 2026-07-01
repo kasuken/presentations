@@ -1,0 +1,14 @@
+name: Publish - Software Delivery is about to get uncomfortable
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'Software Delivery is about to get uncomfortable/**'
+
+jobs:
+  publish:
+    uses: ./.github/workflows/publish-presentation.yml
+    with:
+      talk_folder: 'Software Delivery is about to get uncomfortable'
+      out_folder: 'Software-Delivery-is-about-to-get-uncomfortable'

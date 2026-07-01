@@ -1,0 +1,14 @@
+name: Publish - GitHub Copilot SDK
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'GitHub Copilot SDK/**'
+
+jobs:
+  publish:
+    uses: ./.github/workflows/publish-presentation.yml
+    with:
+      talk_folder: 'GitHub Copilot SDK'
+      out_folder: 'GitHub-Copilot-SDK'
