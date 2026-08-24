@@ -1,0 +1,8 @@
+import{L as e,T as t,Y as n,_ as r,b as i,g as a,gt as o,mt as s,x as c}from"./modules/shiki-DeTF74yl.js";import{nt as l,rt as u}from"./index-HS94PnsF.js";import{t as d}from"./default-C-dhEd0C.js";import{t as f}from"./slidev/CodeBlockWrapper-fv4CFhgJ.js";var p={__name:`slides.md__slidev_18`,setup(p){let{$slidev:m,$nav:h,$clicksContext:g,$clicks:_,$page:v,$renderContext:y,$frontmatter:b}=u();return g.setup(),(u,p)=>{let m=f;return e(),r(d,o(t(s(l)(s(b),17))),{default:n(()=>[p[1]||=a(`h1`,null,`Init separates shared tooling from feature artifacts`,-1),c(m,{title:``,ranges:[]},{default:n(()=>[...p[0]||=[a(`pre`,{class:`shiki the-unnamed slidev-code`,style:{"background-color":`#0E131F`,color:`#F3EFF5`}},[a(`code`,{class:`language-text`},[a(`span`,{class:`line`},[a(`span`,null,`.specify/                       shared templates, scripts, state`)]),i(`
+`),a(`span`,{class:`line`},[a(`span`,null,`  memory/constitution.md        project principles`)]),i(`
+`),a(`span`,{class:`line`},[a(`span`,null,`  integration.json              installed/default integration`)]),i(`
+`),a(`span`,{class:`line`},[a(`span`,null,`.github/skills/                 Copilot adapter (default mode)`)]),i(`
+`),a(`span`,{class:`line`},[a(`span`,null,`  speckit-*/SKILL.md`)]),i(`
+`),a(`span`,{class:`line`},[a(`span`)]),i(`
+`),a(`span`,{class:`line`},[a(`span`,null,`specs/<feature>/                created by the feature workflow`)]),i(`
+`),a(`span`,{class:`line`},[a(`span`,null,`  spec.md  plan.md  tasks.md`)])])],-1)]]),_:1}),p[2]||=a(`p`,null,[i(`The active feature is tracked in `),a(`code`,null,`.specify/feature.json`),i(`. Git branches are optional and belong to the opt-in `),a(`code`,null,`git`),i(` extension.`)],-1)]),_:1},16)}}};export{p as default};
